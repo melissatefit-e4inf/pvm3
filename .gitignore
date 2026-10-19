@@ -1,0 +1,12 @@
+# executables compiles
+bin/
+gaussp
+hello
+tokenring-sibling
+
+# fichiers generes par les executions
+*.result
+
+# divers
+archives/
+spawn
