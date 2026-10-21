@@ -13,6 +13,7 @@
 #define GRPNAME "gaussp"
 #define TAG_LOAD 10
 #define TAG_SAVE 11
+#define TAG_PIVOT 12
 
 
 
@@ -151,7 +152,7 @@ void gauss(double *tab, int N, int P, int me, int tids[]) {
       {
         if(x!=me) 
         {
-          pvm_send(tids[x], TAG_SAVE);
+          pvm_send(tids[x], TAG_PIVOT);
         }
         else
         {
@@ -163,7 +164,7 @@ void gauss(double *tab, int N, int P, int me, int tids[]) {
     }
     else
     {
-      pvm_recv(tids[k%P], TAG_SAVE);
+      pvm_recv(tids[k%P], TAG_PIVOT);
       pvm_upkdouble(ligne_pivot, N, 1);
     }
 
@@ -187,8 +188,8 @@ void gauss(double *tab, int N, int P, int me, int tids[]) {
       }
       /* *(tab+k+i*N) = 0.0; */
     }
-    printf ("\n");
   }
+  free(ligne_pivot);
 }
   
 
