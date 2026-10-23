@@ -1,0 +1,159 @@
+### Test de Gauss — 23/10/2026 19:56:52
+
+########## m4, P=2
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+2 successful
+t4012c
+t4012d
+pvm> [1:t4012c] Loading time: 0.009291 sec.
+[1:t4012c] Computation time: 0.000117 sec.
+[1:t4012c] EOF
+[1:t4012d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m4.result 4 m4.seq.result
+valeurs=16/16 | sous la diagonale : 6/6 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=1.29 | vs m4.seq.result : 0 écarts > 0.011, écart max=0.00
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m4.result 4 m4.triangule
+valeurs=16/16 | sous la diagonale : 6/6 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=1.29 | vs m4.triangule : 0 écarts > 0.011, écart max=0.00
+
+########## m8, P=4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+4 successful
+t4012f
+t40130
+t40131
+t40132
+pvm> [1:t40131] Loading time: 0.006800 sec.
+[1:t40131] Computation time: 0.000711 sec.
+[1:t4012f] EOF
+[1:t40130] EOF
+[1:t40131] EOF
+[1:t40132] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m8.result 8 m8.seq.result
+valeurs=64/64 | sous la diagonale : 28/28 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=154.29 | vs m8.seq.result : 0 écarts > 0.011, écart max=0.00
+
+########## m16, P=4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+4 successful
+t40134
+t40135
+t40136
+t40137
+pvm> [1:t40135] Loading time: 0.008456 sec.
+[1:t40135] Computation time: 0.000974 sec.
+[1:t40134] EOF
+[1:t40135] EOF
+[1:t40137] EOF
+[1:t40136] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m16.result 16 m16.seq.result
+valeurs=256/256 | sous la diagonale : 120/120 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.87 | vs m16.seq.result : 0 écarts > 0.011, écart max=0.00
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m16.result 16 m16.triangule
+valeurs=256/256 | sous la diagonale : 120/120 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.87 | vs m16.triangule : 0 écarts > 0.011, écart max=0.00
+
+########## m500, P=4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+4 successful
+t40139
+t4013a
+t4013b
+t4013c
+pvm> [1:t4013b] Loading time: 0.036261 sec.
+[1:t4013b] Computation time: 0.031005 sec.
+[1:t4013b] EOF
+[1:t40139] EOF
+[1:t4013c] EOF
+[1:t4013a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m500.result 500 m500.seq.result
+valeurs=250000/250000 | sous la diagonale : 124750/124750 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.14 | vs m500.seq.result : 0 écarts > 0.011, écart max=0.00
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m500.result 500 m500.triangule
+valeurs=250000/250000 | sous la diagonale : 124750/124750 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.14 | vs m500.triangule : 0 écarts > 0.011, écart max=0.00
+
+########## m1000, P=4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+4 successful
+t4013e
+t4013f
+t40140
+t40141
+pvm> [1:t40140] Loading time: 0.106085 sec.
+[1:t40140] Computation time: 0.203514 sec.
+[1:t40140] EOF
+[1:t40141] EOF
+[1:t4013e] EOF
+[1:t4013f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m1000.result 1000 m1000.seq.result
+valeurs=1000000/1000000 | sous la diagonale : 499500/499500 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.21 | vs m1000.seq.result : 0 écarts > 0.011, écart max=0.00
+
+########## m5000, P=4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m5000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 5000 /user/safarl/pvm3/matrices-test/m5000
+[1]
+4 successful
+t40143
+t40144
+t40145
+t40146
+pvm> [1:t40143] Loading time: 2.385367 sec.
+[1:t40143] Computation time: 19.757792 sec.
+[1:t40144] EOF
+[1:t40143] EOF
+[1:t40145] EOF
+[1:t40146] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/quantif.py m5000.result 5000 m5000.seq.result
+valeurs=25000000/25000000 | sous la diagonale : 12497500/12497500 nulles, max |a_ij|=0.00 | plus petit pivot |a_kk|=0.36 | vs m5000.seq.result : 0 écarts > 0.011, écart max=0.00

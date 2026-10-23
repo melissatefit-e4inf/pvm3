@@ -1,0 +1,55 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4-absent.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4-absent
+[1]
+4 successful
+t400bb
+t400bc
+t80044
+t100045
+pvm> [1:t400bb] matrix_load : fopen: No such file or directory
+[1:t400bb] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400b9     6/c,f pvmgs       
+                 pc5201l    400bc     6/c,f gaussp      
+                 pc5201c   100045     6/c,f gaussp      
+                 pc5201a    80044     6/c,f gaussp      
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400b9     6/c,f pvmgs       
+                 pc5201l    400bc     6/c,f gaussp      
+                 pc5201c   100045     6/c,f gaussp      
+                 pc5201a    80044     6/c,f gaussp      
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l m4-absent.result
+ls: impossible d'accéder à 'm4-absent.result': Aucun fichier ou dossier de ce nom
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 m4-absent        # référence séquentielle
+matrix_load : fopen : No such file or directory
+environment : ligne 1 : 63484 Erreur de segmentation  timeout 10 ./gauss $S
+(code retour 139)

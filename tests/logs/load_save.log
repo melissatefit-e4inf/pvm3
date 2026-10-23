@@ -1,0 +1,693 @@
+### 23/10/2026 19:38:11
+# Variante de test : gaussp.c avec l'appel à gauss() commenté
+safarl@pc5201l:~/pvm3/matrices-test$ sed 's|^    gauss(tab, N, P, me, tids);|    /* gauss(tab, N, P, me, tids); */|' gaussp.c > /tmp/gaussp_ls.c
+safarl@pc5201l:~/pvm3/matrices-test$ grep -n 'gauss(tab' /tmp/gaussp_ls.c
+225:    /* gauss(tab, N, P, me, tids); */
+safarl@pc5201l:~/pvm3/matrices-test$ cc -I$PVM_ROOT/include -I/usr/include/tirpc -o /user/safarl/pvm3/bin/LINUX64/gaussp_ls /tmp/gaussp_ls.c -L$PVM_ROOT/lib/$PVM_ARCH -lpvm3 -lgpvm3 -ltirpc -lm
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> conf
+1 host, 1 data format
+                    HOST     DTID     ARCH   SPEED       DSIG
+                 pc5201l    40000  LINUX64    1000 0x00408c41
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+
+########## m4
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp_ls 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+1 successful
+t40208
+pvm> [1:t40208] Loading time: 0.008809 sec.
+[1:t40208] Computation time: 0.000193 sec.
+[1:t40208] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m4 m4.result
+16 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp_ls 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+2 successful
+t4020a
+t4020b
+pvm> [1:t4020a] Loading time: 0.002159 sec.
+[1:t4020a] Computation time: 0.000062 sec.
+[1:t4020b] EOF
+[1:t4020a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m4 m4.result
+16 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp_ls 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+4 successful
+t4020d
+t4020e
+t4020f
+t40210
+pvm> [1:t4020f] Loading time: 0.002408 sec.
+[1:t4020f] Computation time: 0.000181 sec.
+[1:t4020d] EOF
+[1:t4020e] EOF
+[1:t4020f] EOF
+[1:t40210] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m4 m4.result
+16 valeurs, 0 différences
+
+########## m8
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp_ls 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+1 successful
+t40212
+pvm> [1:t40212] Loading time: 0.005636 sec.
+[1:t40212] Computation time: 0.000140 sec.
+[1:t40212] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m8 m8.result
+64 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp_ls 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+2 successful
+t40214
+t40215
+pvm> [1:t40214] Loading time: 0.000182 sec.
+[1:t40214] Computation time: 0.000082 sec.
+[1:t40214] EOF
+[1:t40215] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m8 m8.result
+64 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp_ls 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+4 successful
+t40217
+t40218
+t40219
+t4021a
+pvm> [1:t40217] Loading time: 0.000684 sec.
+[1:t40217] Computation time: 0.000244 sec.
+[1:t40217] EOF
+[1:t40218] EOF
+[1:t40219] EOF
+[1:t4021a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m8 m8.result
+64 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -8 -> gaussp_ls 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+8 successful
+t4021c
+t4021d
+t4021e
+t4021f
+t40220
+t40221
+t40222
+t40223
+pvm> [1:t4021e] Loading time: 0.000509 sec.
+[1:t4021e] Computation time: 0.000153 sec.
+[1:t4021c] EOF
+[1:t4021d] EOF
+[1:t4021e] EOF
+[1:t4021f] EOF
+[1:t40223] EOF
+[1:t40221] EOF
+[1:t40220] EOF
+[1:t40222] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m8 m8.result
+64 valeurs, 0 différences
+
+########## m16
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp_ls 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+1 successful
+t40225
+pvm> [1:t40225] Loading time: 0.008162 sec.
+[1:t40225] Computation time: 0.000144 sec.
+[1:t40225] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m16 m16.result
+256 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp_ls 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+2 successful
+t40227
+t40228
+pvm> [1:t40227] Loading time: 0.002189 sec.
+[1:t40227] Computation time: 0.000289 sec.
+[1:t40227] EOF
+[1:t40228] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m16 m16.result
+256 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp_ls 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+4 successful
+t4022a
+t4022b
+t4022c
+t4022d
+pvm> [1:t4022a] Loading time: 0.001697 sec.
+[1:t4022a] Computation time: 0.000031 sec.
+[1:t4022a] EOF
+[1:t4022c] EOF
+[1:t4022b] EOF
+[1:t4022d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m16 m16.result
+256 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -8 -> gaussp_ls 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+8 successful
+t4022f
+t40230
+t40231
+t40232
+t40233
+t40234
+t40235
+t40236
+pvm> [1:t40231] Loading time: 0.001900 sec.
+[1:t40231] Computation time: 0.000159 sec.
+[1:t40231] EOF
+[1:t40233] EOF
+[1:t4022f] EOF
+[1:t40230] EOF
+[1:t40236] EOF
+[1:t40232] EOF
+[1:t40234] EOF
+[1:t40235] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m16 m16.result
+256 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -16 -> gaussp_ls 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+16 successful
+t40238
+t40239
+t4023a
+t4023b
+t4023c
+t4023d
+t4023e
+t4023f
+t40240
+t40241
+t40242
+t40243
+t40244
+t40245
+t40246
+t40247
+pvm> [1:t40238] Loading time: 0.002432 sec.
+[1:t40238] Computation time: 0.000288 sec.
+[1:t4023d] EOF
+[1:t40238] EOF
+[1:t4023e] EOF
+[1:t4023c] EOF
+[1:t40243] EOF
+[1:t40242] EOF
+[1:t40239] EOF
+[1:t4023f] EOF
+[1:t40241] EOF
+[1:t40244] EOF
+[1:t40247] EOF
+[1:t4023a] EOF
+[1:t4023b] EOF
+[1:t40240] EOF
+[1:t40245] EOF
+[1:t40246] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m16 m16.result
+256 valeurs, 0 différences
+
+########## m500
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+1 successful
+t40249
+pvm> [1:t40249] Loading time: 0.051692 sec.
+[1:t40249] Computation time: 0.000178 sec.
+[1:t40249] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+2 successful
+t4024b
+t4024c
+pvm> [1:t4024b] Loading time: 0.034231 sec.
+[1:t4024b] Computation time: 0.000131 sec.
+[1:t4024b] EOF
+[1:t4024c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+4 successful
+t4024e
+t4024f
+t40250
+t40251
+pvm> [1:t40251] Loading time: 0.039997 sec.
+[1:t40251] Computation time: 0.000033 sec.
+[1:t4024f] EOF
+[1:t40250] EOF
+[1:t4024e] EOF
+[1:t40251] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -5 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+5 successful
+t40253
+t40254
+t40255
+t40256
+t40257
+pvm> [1:t40255] Loading time: 0.046655 sec.
+[1:t40255] Computation time: 0.000085 sec.
+[1:t40253] EOF
+[1:t40254] EOF
+[1:t40256] EOF
+[1:t40257] EOF
+[1:t40255] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -10 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+10 successful
+t40259
+t4025a
+t4025b
+t4025c
+t4025d
+t4025e
+t4025f
+t40260
+t40261
+t40262
+pvm> [1:t4025c] Loading time: 0.041016 sec.
+[1:t4025c] Computation time: 0.000259 sec.
+[1:t4025c] EOF
+[1:t40259] EOF
+[1:t4025a] EOF
+[1:t40261] EOF
+[1:t4025d] EOF
+[1:t4025f] EOF
+[1:t4025b] EOF
+[1:t4025e] EOF
+[1:t40260] EOF
+[1:t40262] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -20 -> gaussp_ls 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+20 successful
+t40264
+t40265
+t40266
+t40267
+t40268
+t40269
+t4026a
+t4026b
+t4026c
+t4026d
+t4026e
+t4026f
+t40270
+t40271
+t40272
+t40273
+t40274
+t40275
+t40276
+t40277
+pvm> [1:t40265] Loading time: 0.045244 sec.
+[1:t40265] Computation time: 0.000213 sec.
+[1:t40264] EOF
+[1:t40266] EOF
+[1:t40267] EOF
+[1:t40268] EOF
+[1:t40269] EOF
+[1:t4026a] EOF
+[1:t4026b] EOF
+[1:t4026c] EOF
+[1:t4026d] EOF
+[1:t4026e] EOF
+[1:t4026f] EOF
+[1:t40270] EOF
+[1:t40271] EOF
+[1:t40272] EOF
+[1:t40273] EOF
+[1:t40274] EOF
+[1:t40275] EOF
+[1:t40265] EOF
+[1:t40277] EOF
+[1:t40276] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m500 m500.result
+250000 valeurs, 0 différences
+
+########## m1000
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+1 successful
+t40279
+pvm> [1:t40279] Loading time: 0.105046 sec.
+[1:t40279] Computation time: 0.000029 sec.
+[1:t40279] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+2 successful
+t4027b
+t4027c
+pvm> [1:t4027c] Loading time: 0.107041 sec.
+[1:t4027c] Computation time: 0.000092 sec.
+[1:t4027b] EOF
+[1:t4027c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+4 successful
+t4027e
+t4027f
+t40280
+t40281
+pvm> [1:t4027f] Loading time: 0.109847 sec.
+[1:t4027f] Computation time: 0.000090 sec.
+[1:t4027e] EOF
+[1:t4027f] EOF
+[1:t40280] EOF
+[1:t40281] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -8 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+8 successful
+t40283
+t40284
+t40285
+t40286
+t40287
+t40288
+t40289
+t4028a
+pvm> [1:t40285] Loading time: 0.125481 sec.
+[1:t40285] Computation time: 0.000273 sec.
+[1:t40285] EOF
+[1:t40287] EOF
+[1:t40289] EOF
+[1:t40283] EOF
+[1:t40284] EOF
+[1:t40286] EOF
+[1:t40288] EOF
+[1:t4028a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -10 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+10 successful
+t4028c
+t4028d
+t4028e
+t4028f
+t40290
+t40291
+t40292
+t40293
+t40294
+t40295
+pvm> [1:t4028e] Loading time: 0.110059 sec.
+[1:t4028e] Computation time: 0.000303 sec.
+[1:t4028c] EOF
+[1:t4028e] EOF
+[1:t40290] EOF
+[1:t4028d] EOF
+[1:t40291] EOF
+[1:t40292] EOF
+[1:t40293] EOF
+[1:t4028f] EOF
+[1:t40294] EOF
+[1:t40295] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -20 -> gaussp_ls 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+20 successful
+t40297
+t40298
+t40299
+t4029a
+t4029b
+t4029c
+t4029d
+t4029e
+t4029f
+t402a0
+t402a1
+t402a2
+t402a3
+t402a4
+t402a5
+t402a6
+t402a7
+t402a8
+t402a9
+t402aa
+pvm> [1:t40297] Loading time: 0.117005 sec.
+[1:t40297] Computation time: 0.000178 sec.
+[1:t40298] EOF
+[1:t4029a] EOF
+[1:t4029b] EOF
+[1:t4029c] EOF
+[1:t4029d] EOF
+[1:t4029f] EOF
+[1:t4029e] EOF
+[1:t402a1] EOF
+[1:t40299] EOF
+[1:t402a0] EOF
+[1:t402a7] EOF
+[1:t402a9] EOF
+[1:t402a3] EOF
+[1:t402a4] EOF
+[1:t40297] EOF
+[1:t402a2] EOF
+[1:t402a6] EOF
+[1:t402a8] EOF
+[1:t402aa] EOF
+[1:t402a5] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ cmpm m1000 m1000.result
+1000000 valeurs, 0 différences
+
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f /user/safarl/pvm3/bin/LINUX64/gaussp_ls /tmp/gaussp_ls.c
+### fin 19:38:23

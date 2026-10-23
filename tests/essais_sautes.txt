@@ -1,0 +1,1 @@
+spawn -10 -> gaussp 10000 /user/safarl/pvm3/matrices-test/m10000

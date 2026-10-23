@@ -1,0 +1,279 @@
+==================== m4 (N=4) ====================
+$ ./gauss 4 m4
+loading time: 0.00502300 sec.
+
+computation time: 0.00000400 sec.
+$ cp m4.result m4.seq.result
+---------- m4, P=1 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -1 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -1 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+1 successful
+t40021
+pvm> [1:t40021] Loading time: 0.000167 sec.
+[1:t40021] Computation time: 0.000132 sec.
+[1:t40021] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m4, P=2 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+2 successful
+t40023
+t40024
+pvm> [1:t40024] Loading time: 0.000097 sec.
+[1:t40024] Computation time: 0.000089 sec.
+[1:t40023] EOF
+[1:t40024] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m4, P=4 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+4 successful
+t40026
+t40027
+t40028
+t40029
+pvm> [1:t40027] EOF
+[1:t40029] Loading time: 0.000399 sec.
+[1:t40029] Computation time: 0.000240 sec.
+[1:t40026] EOF
+[1:t40028] EOF
+[1:t40029] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+==================== m8 (N=8) ====================
+$ ./gauss 8 m8
+loading time: 0.00591600 sec.
+
+computation time: 0.00001000 sec.
+$ cp m8.result m8.seq.result
+---------- m8, P=2 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -2 -> gaussp 8 /user/safarl/pvm3/bin/LINUX64/m8
+pvmd already running.
+pvm> spawn -2 -> gaussp 8 /user/safarl/pvm3/bin/LINUX64/m8
+[1]
+2 successful
+t4002b
+t4002c
+pvm> [1:t4002b] Loading time: 0.000114 sec.
+[1:t4002b] Computation time: 0.000158 sec.
+[1:t4002b] EOF
+[1:t4002c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m8.seq.result m8.result 8
+valeurs=64/64 attendu=64 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m8, P=4 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -4 -> gaussp 8 /user/safarl/pvm3/bin/LINUX64/m8
+pvmd already running.
+pvm> spawn -4 -> gaussp 8 /user/safarl/pvm3/bin/LINUX64/m8
+[1]
+4 successful
+t4002e
+t4002f
+t40030
+t40031
+pvm> [1:t40030] Loading time: 0.000309 sec.
+[1:t40030] Computation time: 0.000758 sec.
+[1:t40030] EOF
+[1:t4002f] EOF
+[1:t4002e] EOF
+[1:t40031] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m8.seq.result m8.result 8
+valeurs=64/64 attendu=64 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+==================== m16 (N=16) ====================
+$ ./gauss 16 m16
+loading time: 0.00642200 sec.
+
+computation time: 0.00038500 sec.
+$ cp m16.result m16.seq.result
+---------- m16, P=1 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -1 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+pvmd already running.
+pvm> spawn -1 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+[1]
+1 successful
+t40033
+pvm> [1:t40033] Loading time: 0.000110 sec.
+[1:t40033] Computation time: 0.000048 sec.
+[1:t40033] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m16, P=2 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -2 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+pvmd already running.
+pvm> spawn -2 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+[1]
+2 successful
+t40035
+t40036
+pvm> [1:t40035] Loading time: 0.000145 sec.
+[1:t40035] Computation time: 0.000269 sec.
+[1:t40035] EOF
+[1:t40036] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m16, P=4 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -4 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+pvmd already running.
+pvm> spawn -4 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+[1]
+4 successful
+t40038
+t40039
+t4003a
+t4003b
+pvm> [1:t4003a] Loading time: 0.000172 sec.
+[1:t4003a] Computation time: 0.000365 sec.
+[1:t40039] EOF
+[1:t40038] EOF
+[1:t4003a] EOF
+[1:t4003b] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+---------- m16, P=8 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -8 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+pvmd already running.
+pvm> spawn -8 -> gaussp 16 /user/safarl/pvm3/bin/LINUX64/m16
+[1]
+8 successful
+t4003d
+t4003e
+t4003f
+t40040
+t40041
+t40042
+t40043
+t40044
+pvm> [1:t4003d] EOF
+[1:t4003e] EOF
+[1:t40042] Loading time: 0.000523 sec.
+[1:t40042] Computation time: 0.000677 sec.
+[1:t40040] EOF
+[1:t40044] EOF
+[1:t40043] EOF
+[1:t40042] EOF
+[1:t4003f] EOF
+[1:t40041] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+==================== m500 (N=500) ====================
+$ ./gauss 500 m500
+loading time: 0.04156900 sec.
+
+computation time: 0.08372000 sec.
+$ cp m500.result m500.seq.result
+---------- m500, P=4 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t40046
+t40047
+t40048
+t40049
+pvm> [1:t40049] Loading time: 0.023083 sec.
+[1:t40049] Computation time: 0.033078 sec.
+[1:t40046] EOF
+[1:t40047] EOF
+[1:t40049] EOF
+[1:t40048] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m500.seq.result m500.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+==================== m1000 (N=1000) ====================
+$ ./gauss 1000 m1000
+loading time: 0.10335400 sec.
+
+computation time: 0.68261800 sec.
+$ cp m1000.result m1000.seq.result
+---------- m1000, P=4 ----------
+$ /user/safarl/pvm3/tests/pvmrun.py 120 spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t4004b
+t4004c
+t4004d
+t4004e
+pvm> [1:t4004b] Loading time: 0.107710 sec.
+[1:t4004b] Computation time: 0.280258 sec.
+[1:t4004e] EOF
+[1:t4004d] EOF
+[1:t4004c] EOF
+[1:t4004b] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ /user/safarl/pvm3/tests/compare.py m1000.seq.result m1000.result 1000
+valeurs=1000000/1000000 attendu=1000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+valeurs=4000000/4000000 attendu=4000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

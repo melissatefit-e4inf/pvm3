@@ -1,0 +1,38 @@
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 
+[1]
+2 successful
+t400fd
+t8004c
+pvm> [1:t400fd] EOF
+[1:t8004c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400fb     6/c,f pvmgs       
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss         # référence séquentielle
+Usage: ./gauss <matrix size> <matrix name>
+(code retour 255)

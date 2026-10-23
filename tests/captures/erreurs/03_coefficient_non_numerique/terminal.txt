@@ -1,0 +1,50 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f erreurs/m4-non-numerique.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/erreurs/m4-non-numerique
+[1]
+2 successful
+t400cc
+t80046
+pvm> [1:t400cc] Loading time: 0.007855 sec.
+[1:t400cc] ATTENTION: pivot 2 presque nul: 0
+[1:t400cc] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400ca     6/c,f pvmgs       
+                 pc5201a    80046     6/c,f gaussp      
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400ca     6/c,f pvmgs       
+                 pc5201a    80046     6/c,f gaussp      
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l erreurs/m4-non-numerique.result
+ls: impossible d'accéder à 'erreurs/m4-non-numerique.result': Aucun fichier ou dossier de ce nom
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 erreurs/m4-non-numerique        # référence séquentielle
+loading time: 0.00483100 sec.
+ATTENTION: pivot 2 presque nul: 0
+(code retour 255)

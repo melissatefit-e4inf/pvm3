@@ -1,0 +1,300 @@
+==================== Fichier inexistant ====================
+$ spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-absent
+pvmd already running.
+pvm> spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-absent
+[1]
+4 successful
+t400ec
+t400ed
+t400ee
+t400ef
+pvm> [1:t400ec] matrix_load : fopen: No such file or directory
+[1:t400ec] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400e8     6/c,f pvmgs       
+                 pc5201l    400ed     6/c,f gaussp      
+                 pc5201l    400ee     6/c,f gaussp      
+                 pc5201l    400ef     6/c,f gaussp      
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400ed     6/c,f gaussp      
+                 pc5201l    400ee     6/c,f gaussp      
+                 pc5201l    400ef     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Fichier incomplet (14/16) ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-tronquee
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-tronquee
+[1]
+2 successful
+t400f2
+t400f3
+pvm> [1:t400f2] Loading time: 0.012514 sec.
+[1:t400f2] Computation time: 0.000140 sec.
+[1:t400f2] EOF
+[1:t400f3] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+--- fichier résultat : OUI
+    4.00     1.00     2.00     0.00 
+    0.00     4.75    -0.50     1.00 
+    0.00     0.00     4.95     1.11 
+    0.00     0.00     0.00    -0.57 
+==================== Coefficient non numerique ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-non-numerique
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-non-numerique
+[1]
+2 successful
+t400f8
+t400f9
+pvm> [1:t400f8] Loading time: 0.011544 sec.
+[1:t400f8] ATTENTION: pivot 2 presque nul: 0
+[1:t400f8] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400f9     6/c,f gaussp      
+                 pc5201l    400fb     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400f9     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Pivot nul au depart ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-pivot-nul
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-pivot-nul
+[1]
+2 successful
+t400fe
+t400ff
+pvm> [1:t400fe] Loading time: 0.007061 sec.
+[1:t400fe] ATTENTION: pivot 0 presque nul: 0
+[1:t400fe] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400ff     6/c,f gaussp      
+                 pc5201l    40101     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    400ff     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Pivot nul pendant le calcul ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-pivot-nul-calcul
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/erreurs/m4-pivot-nul-calcul
+[1]
+2 successful
+t40104
+t40105
+pvm> [1:t40105] ATTENTION: pivot 1 presque nul: 0
+[1:t40105] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    40104     6/c,f gaussp      
+                 pc5201l    40106     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    40104     6/c,f gaussp      
+--- fichier résultat : NON
+==================== N non divisible par P (6/4) ====================
+$ spawn -4 -> gaussp 6 /user/safarl/pvm3/bin/LINUX64/erreurs/m6
+pvmd already running.
+pvm> spawn -4 -> gaussp 6 /user/safarl/pvm3/bin/LINUX64/erreurs/m6
+[1]
+4 successful
+t4010a
+t4010b
+t4010c
+t4010d
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    4010a     6/c,f gaussp      
+                 pc5201l    4010b     6/c,f gaussp      
+                 pc5201l    4010c     6/c,f gaussp      
+                 pc5201l    4010d     6/c,f gaussp      
+                 pc5201l    40110     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+                 pc5201l    4010a     6/c,f gaussp      
+                 pc5201l    4010b     6/c,f gaussp      
+                 pc5201l    4010c     6/c,f gaussp      
+                 pc5201l    4010d     6/c,f gaussp      
+--- fichier résultat : OUI
+==================== N nul ====================
+$ spawn -2 -> gaussp 0 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp 0 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+2 successful
+t40114
+t40115
+pvm> [1:t40114] Loading time: 0.003690 sec.
+[1:t40114] Computation time: 0.000108 sec.
+[1:t40114] EOF
+[1:t40115] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+--- fichier résultat : OUI
+==================== N negatif ====================
+$ spawn -2 -> gaussp -4 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp -4 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+2 successful
+t4011a
+t4011b
+pvm> [1:t4011a] Loading time: 0.000077 sec.
+[1:t4011a] Computation time: 0.000060 sec.
+[1:t4011a] EOF
+[1:t4011b] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+--- fichier résultat : OUI
+==================== Arguments manquants ====================
+$ spawn -2 -> gaussp 
+pvmd already running.
+pvm> spawn -2 -> gaussp 
+[1]
+2 successful
+t40120
+t40121
+pvm> [1:t40120] EOF
+[1:t40121] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+==================== Sortie non inscriptible ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/lecture-seule/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/lecture-seule/m4
+[1]
+2 successful
+t40126
+t40127
+pvm> [1:t40127] matrix_save : fopen: Permission denied
+[1:t40127] Loading time: 0.006576 sec.
+[1:t40127] Computation time: 0.000088 sec.
+[1:t40127] EOF
+[1:t40126] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    400e2     804/c -           
+--- fichier résultat : NON
+==================== Référence séquentielle sur les mêmes cas ====================
+$ ./gauss 4 m4-absent
+matrix_load : fopen : No such file or directory
+./erreurs.sh : ligne 32 : 21672 Erreur de segmentation  timeout 10 ./gauss $a
+(code retour 139)
+$ ./gauss 4 erreurs/m4-tronquee
+loading time: 0.00721500 sec.
+
+computation time: 0.00000400 sec.
+(code retour 0)
+$ ./gauss 4 m4-non-numerique
+loading time: 0.00675600 sec.
+ATTENTION: pivot 2 presque nul: 0
+(code retour 255)
+$ ./gauss 4 erreurs/m4-pivot-nul
+loading time: 0.00513800 sec.
+ATTENTION: pivot 0 presque nul: 0
+(code retour 255)
+$ ./gauss 4 erreurs/m4-pivot-nul-calcul
+loading time: 0.00481600 sec.
+ATTENTION: pivot 1 presque nul: 0
+(code retour 255)
+$ ./gauss 0 m4
+loading time: 0.00005300 sec.
+
+computation time: 0.00000300 sec.
+(code retour 0)
+$ ./gauss 
+Usage: ./gauss <matrix size> <matrix name>
+(code retour 255)

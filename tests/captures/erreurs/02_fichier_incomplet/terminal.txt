@@ -1,0 +1,50 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f erreurs/m4-tronquee.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/erreurs/m4-tronquee
+[1]
+2 successful
+t400c4
+t80045
+pvm> [1:t400c4] Loading time: 0.012258 sec.
+[1:t400c4] Computation time: 0.001444 sec.
+[1:t400c4] EOF
+[1:t80045] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400c2     6/c,f pvmgs       
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l erreurs/m4-tronquee.result
+-rwxr-xr-x 1 safarl Domain Users 148 23 oct.  18:30 erreurs/m4-tronquee.result
+safarl@pc5201l:~/pvm3/matrices-test$ cat erreurs/m4-tronquee.result
+    4.00     1.00     2.00     0.00 
+    0.00     4.75    -0.50     1.00 
+    0.00     0.00     4.95     1.11 
+    0.00     0.00     0.00    -0.57 
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 erreurs/m4-tronquee        # référence séquentielle
+loading time: 0.00010600 sec.
+
+computation time: 0.00000300 sec.
+(code retour 0)

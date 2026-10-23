@@ -1,0 +1,5 @@
+Connecting to PVMD already running... No Default Hostfile "/user/safarl/.xpvm_hosts" Found.
+[globs.tcl][procs.tcl][util.tcl]
+Initializing XPVM.............................................. done.
+XPVM 1.2.5+5 connected as TID=0x400e2.
+Quitting xpvm - pvmd still running.

@@ -1,0 +1,50 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f erreurs/m4-pivot-nul.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/erreurs/m4-pivot-nul
+[1]
+2 successful
+t400d4
+t80047
+pvm> [1:t400d4] Loading time: 0.008846 sec.
+[1:t400d4] ATTENTION: pivot 0 presque nul: 0
+[1:t400d4] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400d2     6/c,f pvmgs       
+                 pc5201a    80047     6/c,f gaussp      
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400d2     6/c,f pvmgs       
+                 pc5201a    80047     6/c,f gaussp      
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l erreurs/m4-pivot-nul.result
+ls: impossible d'accéder à 'erreurs/m4-pivot-nul.result': Aucun fichier ou dossier de ce nom
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 erreurs/m4-pivot-nul        # référence séquentielle
+loading time: 0.00673000 sec.
+ATTENTION: pivot 0 presque nul: 0
+(code retour 255)

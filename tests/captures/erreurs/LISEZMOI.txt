@@ -1,0 +1,22 @@
+Cas d'erreur de gaussp — 23/10/2026 — machine virtuelle : pc5201l, pc5201a, pc5201c
+Chaque dossier : terminal.txt (commandes exactes et sorties) + terminal.png (capture du terminal).
+Déroulement de chaque cas : spawn dans la console pvm -> ps -a (tâches bloquées) -> reset -> ps -a (vérif)
+-> ls du fichier .result -> même cas avec gauss séquentiel.
+
+Cas                          P  Message de gaussp                        Tâches bloquées  .result     gauss séquentiel
+01 fichier inexistant        4  matrix_load : fopen: No such file...     3                non         même message puis erreur de segmentation (139)
+02 fichier incomplet (14/16) 2  aucun, se termine                        0                oui, FAUX   aucun message, code 0
+03 coefficient non numérique 2  ATTENTION: pivot 2 presque nul: 0        1                non         même message, code 255
+04 pivot nul au départ       2  ATTENTION: pivot 0 presque nul: 0        1                non         même message, code 255
+05 pivot nul pendant calcul  2  ATTENTION: pivot 1 presque nul: 0        1                non         même message, code 255
+06 N=6 non divisible par P=4 4  aucun                                    4 (toutes)       vide (0 o)  fonctionne (code 0)
+07 N nul                     2  aucun, se termine                        0                vide (0 o)  aucun message, code 0
+08 N négatif (-4)            2  aucun, se termine                        0                vide (0 o)  aucun message, code 0
+09 arguments manquants       2  aucun, les tâches plantent               0                non         affiche l'usage, code 255
+10 sortie non inscriptible   2  matrix_save : fopen: Permission denied   0                non         même message puis erreur de segmentation (139)
+
+Remarques :
+- 02 : fscanf n'est pas contrôlé, les 2 valeurs manquantes sont remplacées par ce qu'il y a en mémoire ; dernier coefficient faux (-0.57).
+- 03 : la lecture s'arrête sur "abc" ; l'erreur n'est détectée que par chance, via un pivot nul.
+- reset est asynchrone sur les hôtes distants : le script attend la disparition des tâches avant le cas suivant,
+  et relance le serveur de groupes pvmgs (tué par reset) avant chaque cas.

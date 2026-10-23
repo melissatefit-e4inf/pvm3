@@ -1,0 +1,12 @@
+Tests de validation gaussp — matrices du prof (m4, m16) et m8 du dépôt — 23/10/2026
+Machine virtuelle : pc5201l, pc5201a, pc5201c
+
+Test     Séq.calcul  Par.chargement Par.calcul     Comparaison
+m4_P2    0.00000200   0.021560       0.002081       OK
+m4_P4    0.00000400   0.002777       0.001812       OK
+m8_P2    0.00000700   0.001725       0.002777       OK
+m8_P4    0.00000500   0.001224       0.003165       OK
+m16_P2   0.00000400   0.004888       0.003483       OK
+m16_P4   0.00000600   0.004639       0.006129       OK
+
+Chaque dossier : terminal.txt / terminal.png (commandes et sorties), xpvm_vue_complete.png, xpvm_space_time.png (zoom), xpvm_task_output.png, xpvm.trace (à rouvrir dans XPVM en PlayBack).

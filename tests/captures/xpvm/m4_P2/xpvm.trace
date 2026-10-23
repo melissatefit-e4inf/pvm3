@@ -1,0 +1,516 @@
+/*
+ * "Creation Date" "Fri Oct 23 18:06:27 2026"
+ * "Machine" "XPVM 1.2.5+5 (PVM 3.4.6)"
+ */ ;;
+
+
+#1802: "host_add(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "HN" "Host Name"
+	char "HN"[];
+	// "HNA" "Host Name Alias"
+	char "HNA"[];
+	// "HA" "Host Architecture"
+	char "HA"[];
+	// "HSP" "Host Speed"
+	int "HSP";
+};;
+
+"host_add(0)" { 1792771587, 155019, 262144, [8] { "pc5201l" }, [8] { "pc5201l" }, [8] { "LINUX64" }, 1000 };;
+"host_add(0)" { 1792771587, 155019, 524288, [8] { "pc5201a" }, [8] { "pc5201a" }, [8] { "LINUX64" }, 1000 };;
+
+#1806: "host_sync(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "HDS" "Host Delta Seconds"
+	int "HDS";
+	// "HDU" "Host Delta Microseconds"
+	int "HDU";
+};;
+
+"host_sync(0)" { 1792771587, 155019, 524288, 0, 3339 };;
+"host_add(0)" { 1792771587, 155019, 1048576, [8] { "pc5201c" }, [8] { "pc5201c" }, [8] { "LINUX64" }, 1000 };;
+"host_sync(0)" { 1792771587, 155019, 1048576, 0, 2945 };;
+
+#1150: "newtask(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "PT" "Parent Task ID"
+	int "PT";
+	// "TF" "Task Flags"
+	int "TF";
+	// "TN" "Task Name"
+	char "TN"[];
+};;
+
+"newtask(0)" { 1792771587, 159405, 262203, -35, 72, [7] { "gaussp" } };;
+
+#1808: "output(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "OS" "Output String"
+	char "OS"[];
+};;
+
+"output(0)" { 1792771587, 159405, 262203, [9] { "CREATION" } };;
+"newtask(0)" { 1792771587, 167129, 524315, -35, 72, [7] { "gaussp" } };;
+"output(0)" { 1792771587, 167129, 524315, [9] { "CREATION" } };;
+
+#1154: "spntask(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "PT" "Parent Task ID"
+	int "PT";
+};;
+
+"spntask(0)" { 1792771587, 173734, 262203, -35 };;
+"output(0)" { 1792771587, 173734, 262203, [9] { "GOTSPAWN" } };;
+"spntask(0)" { 1792771587, 173744, 524315, -35 };;
+"output(0)" { 1792771587, 173744, 524315, [9] { "GOTSPAWN" } };;
+
+#1052: "mytid(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+};;
+
+"mytid(0.0)" { 1792771587, 176417, 262203 };;
+
+#1210: "mhf_invoke(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "RST" "Receive Msg Source Task / Wildcard"
+	int "RST";
+	// "RMC" "Receive Msg Code / Wildcard"
+	int "RMC";
+	// "RCX" "Receive Msg Context"
+	int "RCX";
+	// "MB" "Message Buffer"
+	int "MB";
+	// "MNB" "Message Number of Bytes"
+	int "MNB";
+	// "MC" "Message Code"
+	int "MC";
+	// "MCX" "Message Context"
+	int "MCX";
+	// "SRC" "Message Source Task ID"
+	int "SRC";
+};;
+
+"mhf_invoke(0.0)" { 1792771587, 176437, 262203, -1, -2147287028, 524287, 7, 12, -2147287028, 524287, 262202 };;
+
+#2053: "mytid(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "MT" "My Task ID"
+	int "MT";
+};;
+
+"mytid(1.1)" { 1792771587, 176450, 262203, 262203 };;
+
+#1200: "siblings(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+};;
+
+"siblings(0.0)" { 1792771587, 176457, 262203 };;
+
+#2201: "siblings(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "SIB" "Sibling Task ID List"
+	int "SIB"[];
+};;
+
+"siblings(1.1)" { 1792771587, 176462, 262203, [2] { 262203, 524315 } };;
+
+#1038: "joingroup(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "GN" "Group Name"
+	char "GN"[];
+};;
+
+"joingroup(0.0)" { 1792771587, 176467, 262203, [7] { "gaussp" } };;
+
+#2039: "joingroup(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "CC" "Condition Code"
+	int "CC";
+};;
+
+"joingroup(1.1)" { 1792771587, 176782, 262203, 0 };;
+
+#1002: "barrier(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "GN" "Group Name"
+	char "GN"[];
+	// "GBC" "Group Barrier Count"
+	int "GBC";
+};;
+
+"barrier(0.0)" { 1792771587, 176797, 262203, [7] { "gaussp" }, 2 };;
+"mytid(0.0)" { 1792771587, 187724, 524315 };;
+"mhf_invoke(0.0)" { 1792771587, 187759, 524315, -1, -2147287028, 524287, 7, 12, -2147287028, 524287, 262202 };;
+"mytid(1.1)" { 1792771587, 187784, 524315, 524315 };;
+"siblings(0.0)" { 1792771587, 187796, 524315 };;
+"siblings(1.1)" { 1792771587, 187804, 524315, [2] { 262203, 524315 } };;
+"joingroup(0.0)" { 1792771587, 187814, 524315, [7] { "gaussp" } };;
+"joingroup(1.1)" { 1792771587, 190972, 524315, 1 };;
+"barrier(0.0)" { 1792771587, 190999, 524315, [7] { "gaussp" }, 2 };;
+
+#2003: "barrier(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "CC" "Condition Code"
+	int "CC";
+};;
+
+"barrier(1.1)" { 1792771587, 195383, 262203, 0 };;
+"mytid(0.0)" { 1792771587, 195408, 262203 };;
+"mytid(1.1)" { 1792771587, 195421, 262203, 262203 };;
+"mytid(0.0)" { 1792771587, 195429, 262203 };;
+"mytid(1.1)" { 1792771587, 195437, 262203, 262203 };;
+
+#1094: "send(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "MNB" "Message Number of Bytes"
+	int "MNB";
+	// "DST" "Message Destination Task ID"
+	int "DST";
+	// "MC" "Message Code"
+	int "MC";
+	// "MCX" "Message Context"
+	int "MCX";
+};;
+
+"send(0.0)" { 1792771587, 195447, 262203, 16, 262184, 13, 524284 };;
+
+#2095: "send(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "CC" "Condition Code"
+	int "CC";
+};;
+
+"send(1.1)" { 1792771587, 195464, 262203, 0 };;
+
+#1114: "trecv(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "RST" "Receive Msg Source Task / Wildcard"
+	int "RST";
+	// "RMC" "Receive Msg Code / Wildcard"
+	int "RMC";
+	// "RCX" "Receive Msg Context"
+	int "RCX";
+	// "MTS" "Message Timeout Seconds"
+	int "MTS";
+	// "MTU" "Message Timeout Microseconds"
+	int "MTU";
+};;
+
+"trecv(0.0)" { 1792771587, 195473, 262203, 262184, 13, 524284, -1, -1 };;
+"barrier(1.1)" { 1792771587, 192336, 524315, 0 };;
+"mytid(0.0)" { 1792771587, 192364, 524315 };;
+"mytid(1.1)" { 1792771587, 192374, 524315, 524315 };;
+"mytid(0.0)" { 1792771587, 192383, 524315 };;
+"mytid(1.1)" { 1792771587, 192392, 524315, 524315 };;
+"send(0.0)" { 1792771587, 192405, 524315, 16, 262184, 13, 524284 };;
+"send(1.1)" { 1792771587, 192424, 524315, 0 };;
+
+#2115: "trecv(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "MB" "Message Buffer"
+	int "MB";
+	// "MNB" "Message Number of Bytes"
+	int "MNB";
+	// "MC" "Message Code"
+	int "MC";
+	// "MCX" "Message Context"
+	int "MCX";
+	// "SRC" "Message Source Task ID"
+	int "SRC";
+};;
+
+"trecv(1.1)" { 1792771587, 197805, 262203, 7, 92, 13, 524284, 262184 };;
+
+#1028: "gettid(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "GN" "Group Name"
+	char "GN"[];
+	// "GI" "Group Instance Number"
+	int "GI";
+};;
+
+"gettid(0.0)" { 1792771587, 197842, 262203, [7] { "gaussp" }, 0 };;
+
+#2029: "gettid(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "GT" "Group Task ID"
+	int "GT";
+};;
+
+"gettid(1.1)" { 1792771587, 197871, 262203, 262203 };;
+"gettid(0.0)" { 1792771587, 197881, 262203, [7] { "gaussp" }, 1 };;
+"gettid(1.1)" { 1792771587, 197890, 262203, 524315 };;
+"trecv(0.0)" { 1792771587, 192435, 524315, 262184, 13, 524284, -1, -1 };;
+"trecv(1.1)" { 1792771587, 194717, 524315, 7, 92, 13, 524284, 262184 };;
+"gettid(0.0)" { 1792771587, 194757, 524315, [7] { "gaussp" }, 0 };;
+"gettid(1.1)" { 1792771587, 194779, 524315, 262203 };;
+"gettid(0.0)" { 1792771587, 194792, 524315, [7] { "gaussp" }, 1 };;
+"gettid(1.1)" { 1792771587, 194802, 524315, 524315 };;
+
+#1090: "recv(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "RST" "Receive Msg Source Task / Wildcard"
+	int "RST";
+	// "RMC" "Receive Msg Code / Wildcard"
+	int "RMC";
+	// "RCX" "Receive Msg Context"
+	int "RCX";
+};;
+
+"recv(0.0)" { 1792771587, 194812, 524315, 262203, 10, 0 };;
+"send(0.0)" { 1792771587, 206789, 262203, 32, 524315, 10, 0 };;
+"send(1.1)" { 1792771587, 206831, 262203, 0 };;
+"send(0.0)" { 1792771587, 206847, 262203, 32, 524315, 10, 0 };;
+"send(1.1)" { 1792771587, 206861, 262203, 0 };;
+"barrier(0.0)" { 1792771587, 206882, 262203, [7] { "gaussp" }, 2 };;
+
+#2091: "recv(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "MB" "Message Buffer"
+	int "MB";
+	// "MNB" "Message Number of Bytes"
+	int "MNB";
+	// "MC" "Message Code"
+	int "MC";
+	// "MCX" "Message Context"
+	int "MCX";
+	// "SRC" "Message Source Task ID"
+	int "SRC";
+};;
+
+"recv(1.1)" { 1792771587, 203767, 524315, 7, 32, 10, 0, 262203 };;
+"recv(0.0)" { 1792771587, 203803, 524315, 262203, 10, 0 };;
+"recv(1.1)" { 1792771587, 203974, 524315, 7, 32, 10, 0, 262203 };;
+"barrier(0.0)" { 1792771587, 204004, 524315, [7] { "gaussp" }, 2 };;
+"barrier(1.1)" { 1792771587, 208525, 262203, 0 };;
+"send(0.0)" { 1792771587, 208568, 262203, 32, 524315, 12, 0 };;
+"send(1.1)" { 1792771587, 208587, 262203, 0 };;
+"recv(0.0)" { 1792771587, 208596, 262203, 524315, 12, 0 };;
+"barrier(1.1)" { 1792771587, 205612, 524315, 0 };;
+"recv(0.0)" { 1792771587, 205639, 524315, 262203, 12, 0 };;
+"recv(1.1)" { 1792771587, 205686, 524315, 7, 32, 12, 0, 262203 };;
+"send(0.0)" { 1792771587, 205702, 524315, 32, 262203, 12, 0 };;
+"recv(1.1)" { 1792771587, 210125, 262203, 5, 32, 12, 0, 524315 };;
+"send(0.0)" { 1792771587, 210158, 262203, 32, 524315, 12, 0 };;
+"send(1.1)" { 1792771587, 210174, 262203, 0 };;
+"barrier(0.0)" { 1792771587, 210183, 262203, [7] { "gaussp" }, 2 };;
+"send(1.1)" { 1792771587, 205722, 524315, 0 };;
+"recv(0.0)" { 1792771587, 205733, 524315, 262203, 12, 0 };;
+"recv(1.1)" { 1792771587, 207011, 524315, 7, 32, 12, 0, 262203 };;
+"barrier(0.0)" { 1792771587, 207039, 524315, [7] { "gaussp" }, 2 };;
+"barrier(1.1)" { 1792771587, 211470, 262203, 0 };;
+"barrier(1.1)" { 1792771587, 208380, 524315, 0 };;
+"send(0.0)" { 1792771587, 208417, 524315, 32, 262203, 11, 0 };;
+"send(1.1)" { 1792771587, 208435, 524315, 0 };;
+"send(0.0)" { 1792771587, 208447, 524315, 32, 262203, 11, 0 };;
+"send(1.1)" { 1792771587, 208464, 524315, 0 };;
+"barrier(0.0)" { 1792771587, 208472, 524315, [7] { "gaussp" }, 2 };;
+"recv(0.0)" { 1792771587, 223082, 262203, 524315, 11, 0 };;
+"recv(1.1)" { 1792771587, 223169, 262203, 4, 32, 11, 0, 524315 };;
+"recv(0.0)" { 1792771587, 223195, 262203, 524315, 11, 0 };;
+"recv(1.1)" { 1792771587, 223208, 262203, 3, 32, 11, 0, 524315 };;
+"barrier(0.0)" { 1792771587, 225351, 262203, [7] { "gaussp" }, 2 };;
+"barrier(1.1)" { 1792771587, 225627, 262203, 0 };;
+
+#1044: "lvgroup(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "GN" "Group Name"
+	char "GN"[];
+};;
+
+"lvgroup(0.0)" { 1792771587, 225648, 262203, [7] { "gaussp" } };;
+
+#2045: "lvgroup(1.1)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "CC" "Condition Code"
+	int "CC";
+};;
+
+"lvgroup(1.1)" { 1792771587, 225891, 262203, 0 };;
+
+#1014: "exit(0.0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+};;
+
+"exit(0.0)" { 1792771587, 225913, 262203 };;
+"output(0)" { 1792771587, 225913, 262203, [28] { "Loading time: 0.010646 sec." } };;
+"output(0)" { 1792771587, 225913, 262203, [32] { "Computation time: 0.002928 sec." } };;
+"barrier(1.1)" { 1792771587, 222656, 524315, 0 };;
+"lvgroup(0.0)" { 1792771587, 222681, 524315, [7] { "gaussp" } };;
+"output(0)" { 1792771587, 225913, 262203, [7] { "GOTEOF" } };;
+
+#1152: "endtask(0)"
+{
+	// "TS" "Time Seconds"
+	int "TS";
+	// "TU" "Time Microseconds"
+	int "TU";
+	// "TID" "Task ID"
+	int "TID";
+	// "TST" "Task Status"
+	int "TST";
+	// "TUS" "Task User Usage Seconds"
+	int "TUS";
+	// "TUU" "Task User Usage Microseconds"
+	int "TUU";
+	// "TSS" "Task System Usage Seconds"
+	int "TSS";
+	// "TSU" "Task System Usage Microseconds"
+	int "TSU";
+};;
+
+"endtask(0)" { 1792771587, 226403, 262203, 0, 0, 0, 0, 0 };;
+"lvgroup(1.1)" { 1792771587, 223428, 524315, 0 };;
+"exit(0.0)" { 1792771587, 223455, 524315 };;
+"output(0)" { 1792771587, 226403, 524315, [7] { "GOTEOF" } };;
+"endtask(0)" { 1792771587, 223994, 524315, 0, 0, 0, 0, 0 };;

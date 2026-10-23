@@ -1,0 +1,76 @@
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40047] Loading time: 0.051815 sec.
+[1:t40047] Computation time: 0.030688 sec.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40050] Loading time: 0.023722 sec.
+[1:t40050] Computation time: 0.033998 sec.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40056] Loading time: 0.023449 sec.
+[1:t40056] Computation time: 0.039425 sec.
+$ spawn -4 -> gaussp_utile 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40059] Loading time: 0.023223 sec.
+[1:t40059] Computation time: 0.027017 sec.
+$ spawn -4 -> gaussp_utile 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40060] Loading time: 0.025444 sec.
+[1:t40060] Computation time: 0.036868 sec.
+$ spawn -4 -> gaussp_utile 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvm> [1:t40064] Loading time: 0.022843 sec.
+[1:t40064] Computation time: 0.026955 sec.
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t4006b] Loading time: 0.107682 sec.
+[1:t4006b] Computation time: 0.254822 sec.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40070] Loading time: 0.090858 sec.
+[1:t40070] Computation time: 0.224098 sec.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40075] Loading time: 0.090569 sec.
+[1:t40075] Computation time: 0.200355 sec.
+$ spawn -4 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40077] Loading time: 0.091538 sec.
+[1:t40077] Computation time: 0.179847 sec.
+$ spawn -4 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t4007e] Loading time: 0.092218 sec.
+[1:t4007e] Computation time: 0.204022 sec.
+$ spawn -4 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40084] Loading time: 0.091457 sec.
+[1:t40084] Computation time: 0.200476 sec.
+valeurs=1000000/1000000 attendu=1000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40089] Loading time: 0.110232 sec.
+[1:t40089] Computation time: 0.183787 sec.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t40093] Loading time: 0.092105 sec.
+[1:t40093] Computation time: 0.196490 sec.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t4009e] Loading time: 0.091958 sec.
+[1:t4009e] Computation time: 0.187741 sec.
+$ spawn -8 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t400a3] Loading time: 0.096390 sec.
+[1:t400a3] Computation time: 0.178738 sec.
+$ spawn -8 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t400ac] Loading time: 0.093357 sec.
+[1:t400ac] Computation time: 0.172105 sec.
+$ spawn -8 -> gaussp_utile 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvm> [1:t400b5] Loading time: 0.096853 sec.
+[1:t400b5] Computation time: 0.169820 sec.
+valeurs=1000000/1000000 attendu=1000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400bd] Loading time: 0.390632 sec.
+[1:t400bd] Computation time: 1.391090 sec.
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400c1] Loading time: 0.415369 sec.
+[1:t400c1] Computation time: 1.449369 sec.
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400c8] Loading time: 0.390508 sec.
+[1:t400c8] Computation time: 1.466328 sec.
+$ spawn -4 -> gaussp_utile 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400cb] Loading time: 0.380538 sec.
+[1:t400cb] Computation time: 1.369182 sec.
+$ spawn -4 -> gaussp_utile 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400d0] Loading time: 0.394002 sec.
+[1:t400d0] Computation time: 1.379845 sec.
+$ spawn -4 -> gaussp_utile 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvm> [1:t400d5] Loading time: 0.383548 sec.
+[1:t400d5] Computation time: 1.386034 sec.
+valeurs=4000000/4000000 attendu=4000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

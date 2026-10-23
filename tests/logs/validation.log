@@ -1,0 +1,327 @@
+### 23/10/2026 16:33:33 —  16:33:33 up  5:23,  3 users,  load average: 1,13, 0,61, 0,57
+
+########## m4 (N=4) ##########
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 m4
+loading time: 0.01070700 sec.
+
+computation time: 0.00000300 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m4.result m4.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.triangule m4.seq.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+1 successful
+t40133
+pvm> [1:t40133] Loading time: 0.001557 sec.
+[1:t40133] Computation time: 0.000080 sec.
+[1:t40133] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+2 successful
+t40136
+t40137
+pvm> [1:t40136] Loading time: 0.001513 sec.
+[1:t40136] Computation time: 0.000053 sec.
+[1:t40136] EOF
+[1:t40137] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+4 successful
+t40139
+t4013a
+t4013b
+t4013c
+pvm> [1:t40139] Loading time: 0.002453 sec.
+[1:t40139] Computation time: 0.000399 sec.
+[1:t40139] EOF
+[1:t4013a] EOF
+[1:t4013c] EOF
+[1:t4013b] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+
+########## m16 (N=16) ##########
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 16 m16
+loading time: 0.01095600 sec.
+
+computation time: 0.00001600 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m16.result m16.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.triangule m16.seq.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -1 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+1 successful
+t4013e
+pvm> [1:t4013e] Loading time: 0.001857 sec.
+[1:t4013e] Computation time: 0.000094 sec.
+[1:t4013e] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+2 successful
+t40140
+t40141
+pvm> [1:t40140] Loading time: 0.002239 sec.
+[1:t40140] Computation time: 0.000555 sec.
+[1:t40140] EOF
+[1:t40141] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+4 successful
+t40143
+t40144
+t40145
+t40146
+pvm> [1:t40146] Loading time: 0.001998 sec.
+[1:t40146] Computation time: 0.000344 sec.
+[1:t40144] EOF
+[1:t40143] EOF
+[1:t40146] EOF
+[1:t40145] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -8 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+8 successful
+t40148
+t40149
+t4014a
+t4014b
+t4014c
+t4014d
+t4014e
+t4014f
+pvm> [1:t4014c] Loading time: 0.008060 sec.
+[1:t4014c] Computation time: 0.000512 sec.
+[1:t40148] EOF
+[1:t40149] EOF
+[1:t4014c] EOF
+[1:t4014b] EOF
+[1:t4014d] EOF
+[1:t4014a] EOF
+[1:t4014e] EOF
+[1:t4014f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+
+########## m500 (N=500) ##########
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.04232200 sec.
+
+computation time: 0.08328100 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m500.result m500.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m500.triangule m500.seq.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+2 successful
+t40151
+t40152
+pvm> [1:t40151] Loading time: 0.029664 sec.
+[1:t40151] Computation time: 0.051481 sec.
+[1:t40152] EOF
+[1:t40151] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m500.seq.result m500.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+4 successful
+t40154
+t40155
+t40156
+t40157
+pvm> [1:t40156] Loading time: 0.034752 sec.
+[1:t40156] Computation time: 0.030500 sec.
+[1:t40156] EOF
+[1:t40155] EOF
+[1:t40154] EOF
+[1:t40157] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m500.seq.result m500.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m500.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/matrices-test/m500
+[1]
+10 successful
+t40159
+t4015a
+t4015b
+t4015c
+t4015d
+t4015e
+t4015f
+t40160
+t40161
+t40162
+pvm> [1:t4015f] Loading time: 0.027135 sec.
+[1:t4015f] Computation time: 0.039422 sec.
+[1:t40159] EOF
+[1:t40161] EOF
+[1:t4015e] EOF
+[1:t40162] EOF
+[1:t4015d] EOF
+[1:t4015c] EOF
+[1:t4015f] EOF
+[1:t4015a] EOF
+[1:t4015b] EOF
+[1:t40160] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m500.seq.result m500.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+
+########## m1000 (N=1000) ##########
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.10597900 sec.
+
+computation time: 0.67186300 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m1000.result m1000.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+4 successful
+t40164
+t40165
+t40166
+t40167
+pvm> [1:t40167] Loading time: 0.124776 sec.
+[1:t40167] Computation time: 0.231635 sec.
+[1:t40166] EOF
+[1:t40164] EOF
+[1:t40165] EOF
+[1:t40167] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m1000.seq.result m1000.result 1000
+valeurs=1000000/1000000 attendu=1000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m1000.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/matrices-test/m1000
+[1]
+8 successful
+t40169
+t4016a
+t4016b
+t4016c
+t4016d
+t4016e
+t4016f
+t40170
+pvm> [1:t4016f] Loading time: 0.109247 sec.
+[1:t4016f] Computation time: 0.185135 sec.
+[1:t4016b] EOF
+[1:t40169] EOF
+[1:t4016a] EOF
+[1:t4016d] EOF
+[1:t4016c] EOF
+[1:t4016e] EOF
+[1:t4016f] EOF
+[1:t40170] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m1000.seq.result m1000.result 1000
+valeurs=1000000/1000000 attendu=1000000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

@@ -1,0 +1,284 @@
+==================== Fichier inexistant ====================
+$ spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-absent
+pvm> spawn -4 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-absent
+[1]
+4 successful
+t40002
+t40003
+t40004
+t40005
+pvm> [1:t40002] matrix_load : fopen: No such file or directory
+[1:t40002] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40003     6/c,f gaussp      
+                 pc5201l    40004     6/c,f gaussp      
+                 pc5201l    40005     6/c,f gaussp      
+                 pc5201l    40007     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40003     6/c,f gaussp      
+                 pc5201l    40004     6/c,f gaussp      
+                 pc5201l    40005     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Fichier incomplet (14/16) ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-tronquee
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-tronquee
+[1]
+2 successful
+t4000c
+t4000d
+pvm> [1:t4000c] Loading time: 0.006982 sec.
+[1:t4000c] Computation time: 0.000150 sec.
+[1:t4000c] EOF
+[1:t4000d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+--- fichier résultat : OUI
+   85.39    -7.55     3.90    -3.44 
+    0.00    74.03     4.54    -1.67 
+    0.00     0.00    70.93    -0.96 
+    0.00     0.00     0.00    -0.62 
+==================== Coefficient non numerique ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-non-numerique
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-non-numerique
+[1]
+2 successful
+t40012
+t40013
+pvm> [1:t40013] Loading time: 0.008270 sec.
+[1:t40013] ATTENTION: pivot 2 presque nul: 0
+[1:t40013] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40012     6/c,f gaussp      
+                 pc5201l    40014     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40012     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Pivot nul au depart ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-pivot-nul
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-pivot-nul
+[1]
+2 successful
+t40018
+t40019
+pvm> [1:t40018] Loading time: 0.007099 sec.
+[1:t40018] ATTENTION: pivot 0 presque nul: 0
+[1:t40018] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40019     6/c,f gaussp      
+                 pc5201l    4001b     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40019     6/c,f gaussp      
+--- fichier résultat : NON
+==================== Pivot nul pendant le calcul ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-pivot-nul-calcul
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/m4-pivot-nul-calcul
+[1]
+2 successful
+t4001e
+t4001f
+pvm> [1:t4001f] ATTENTION: pivot 1 presque nul: 0
+[1:t4001f] EOF
+
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    4001e     6/c,f gaussp      
+                 pc5201l    40020     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    4001e     6/c,f gaussp      
+--- fichier résultat : NON
+==================== N non divisible par P (6/4) ====================
+$ spawn -4 -> gaussp 6 /user/safarl/pvm3/bin/LINUX64/m6
+pvmd already running.
+pvm> spawn -4 -> gaussp 6 /user/safarl/pvm3/bin/LINUX64/m6
+[1]
+4 successful
+t40024
+t40025
+t40026
+t40027
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40024     6/c,f gaussp      
+                 pc5201l    40025     6/c,f gaussp      
+                 pc5201l    40026     6/c,f gaussp      
+                 pc5201l    40027     6/c,f gaussp      
+                 pc5201l    40029     6/c,f pvmgs       
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40024     6/c,f gaussp      
+                 pc5201l    40025     6/c,f gaussp      
+                 pc5201l    40026     6/c,f gaussp      
+                 pc5201l    40027     6/c,f gaussp      
+--- fichier résultat : OUI
+==================== N nul ====================
+$ spawn -2 -> gaussp 0 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp 0 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+2 successful
+t4002e
+t4002f
+pvm> [1:t4002e] Loading time: 0.003645 sec.
+[1:t4002e] Computation time: 0.000042 sec.
+[1:t4002e] EOF
+[1:t4002f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+--- fichier résultat : OUI
+==================== N negatif ====================
+$ spawn -2 -> gaussp -4 /user/safarl/pvm3/bin/LINUX64/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp -4 /user/safarl/pvm3/bin/LINUX64/m4
+[1]
+2 successful
+t40034
+t40035
+pvm> [1:t40034] Loading time: 0.000035 sec.
+[1:t40034] Computation time: 0.000024 sec.
+[1:t40034] EOF
+[1:t40035] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+--- fichier résultat : OUI
+==================== Arguments manquants ====================
+$ spawn -2 -> gaussp 
+pvmd already running.
+pvm> spawn -2 -> gaussp 
+[1]
+2 successful
+t4003a
+t4003b
+pvm> [1:t4003b] EOF
+[1:t4003a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+==================== Sortie non inscriptible ====================
+$ spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/lecture-seule/m4
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/bin/LINUX64/lecture-seule/m4
+[1]
+2 successful
+t40040
+t40041
+pvm> [1:t40041] matrix_save : fopen: Permission denied
+[1:t40041] Loading time: 0.008484 sec.
+[1:t40041] Computation time: 0.000089 sec.
+[1:t40041] EOF
+[1:t40040] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+--- tâches encore présentes :
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+--- fichier résultat : NON
+==================== Référence séquentielle sur les mêmes cas ====================
+$ ./gauss 4 m4-absent
+matrix_load : fopen : No such file or directory
+./erreurs.sh : ligne 32 : 19475 Erreur de segmentation  timeout 10 ./gauss $a
+(code retour 139)
+$ ./gauss 4 m4-tronquee
+loading time: 0.00687000 sec.
+
+computation time: 0.00000400 sec.
+(code retour 0)
+$ ./gauss 4 m4-non-numerique
+loading time: 0.00797400 sec.
+ATTENTION: pivot 2 presque nul: 0
+(code retour 255)
+$ ./gauss 4 m4-pivot-nul
+loading time: 0.00721200 sec.
+ATTENTION: pivot 0 presque nul: 0
+(code retour 255)
+$ ./gauss 4 m4-pivot-nul-calcul
+loading time: 0.00573800 sec.
+ATTENTION: pivot 1 presque nul: 0
+(code retour 255)
+$ ./gauss 0 m4
+loading time: 0.00006700 sec.
+
+computation time: 0.00000200 sec.
+(code retour 0)
+$ ./gauss 
+Usage: ./gauss <matrix size> <matrix name>
+(code retour 255)

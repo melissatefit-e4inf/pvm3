@@ -1,10 +1,9 @@
-
-#include <stdlib.h>
 #include <stdio.h>
-	 
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 #include <sys/time.h>
 #include <time.h>
-
 #include <errno.h>
 
 void matrix_load ( char nom[], double *tab, int N ) {
@@ -67,7 +66,7 @@ void gauss ( double * tab, int N ) {
   printf ("\n");
 }
 
-main (int argc, char **argv) {
+int main (int argc, char **argv) {
   int N, i, j, k;
   double *tab, pivot;
   char nom[255];
@@ -99,4 +98,6 @@ main (int argc, char **argv) {
 
   sprintf ( nom+strlen(nom), ".result" );
   matrix_save ( nom, tab, N );
+
+  return 0 ; 
 }

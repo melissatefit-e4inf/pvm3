@@ -1,0 +1,27 @@
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 m4
+loading time: 0.01072600 sec.
+
+computation time: 0.00000200 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m4.result m4.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.triangule m4.seq.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/m4
+[1]
+2 successful
+t8001a
+t10001a
+pvm> [1:t10001a] Loading time: 0.021560 sec.
+[1:t10001a] Computation time: 0.002081 sec.
+[1:t8001a] EOF
+[1:t10001a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m4.seq.result m4.result 4
+valeurs=16/16 attendu=16 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

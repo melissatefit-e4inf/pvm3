@@ -1,0 +1,82 @@
+### 23/10/2026 18:39:54 —  18:39:54 up  7:29,  1 user,  load average: 1,26, 0,83, 0,64
+
+########## N=500 — 5 essai(s)
+# essai 1
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.03929300 sec.
+
+computation time: 0.08301900 sec.
+# essai 2
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.04616700 sec.
+
+computation time: 0.08238600 sec.
+# essai 3
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.05050700 sec.
+
+computation time: 0.08284900 sec.
+# essai 4
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.03406500 sec.
+
+computation time: 0.08325600 sec.
+# essai 5
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 500 m500
+loading time: 0.03903600 sec.
+
+computation time: 0.08434700 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m500.result m500.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m500.triangule m500.seq.result 500
+valeurs=250000/250000 attendu=250000 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+
+########## N=1000 — 5 essai(s)
+# essai 1
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.10867100 sec.
+
+computation time: 0.67247500 sec.
+# essai 2
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.10525700 sec.
+
+computation time: 0.67404600 sec.
+# essai 3
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.10316700 sec.
+
+computation time: 0.67154600 sec.
+# essai 4
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.11022900 sec.
+
+computation time: 0.67275000 sec.
+# essai 5
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 1000 m1000
+loading time: 0.10232100 sec.
+
+computation time: 0.67440300 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m1000.result m1000.seq.result
+
+########## N=5000 — 3 essai(s)
+# essai 1
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 5000 m5000
+loading time: 2.22407400 sec.
+
+computation time: 80.22884600 sec.
+# essai 2
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 5000 m5000
+loading time: 2.23288700 sec.
+
+computation time: 80.17611600 sec.
+# essai 3
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 5000 m5000
+loading time: 2.24065500 sec.
+
+computation time: 80.19704700 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m5000.result m5000.seq.result
+
+########## N=10000 — 1 essai(s)
+# essai 1
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 10000 m10000
+### interrompu à 18:50:43 pour gagner du temps : séquentiel N=10000 repris de l'exécution manuelle du 23/10 (627.16969 s)

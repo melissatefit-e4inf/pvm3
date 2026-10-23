@@ -1,0 +1,45 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f lecture-seule/m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 4 /user/safarl/pvm3/matrices-test/lecture-seule/m4
+[1]
+2 successful
+t40105
+t8004d
+pvm> [1:t40105] matrix_save : fopen: Permission denied
+[1:t40105] Loading time: 0.006002 sec.
+[1:t40105] Computation time: 0.001768 sec.
+[1:t40105] EOF
+[1:t8004d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    40103     6/c,f pvmgs       
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l lecture-seule/m4.result
+ls: impossible d'accéder à 'lecture-seule/m4.result': Aucun fichier ou dossier de ce nom
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 4 lecture-seule/m4        # référence séquentielle
+matrix_save : fopen : Permission denied
+environment : ligne 1 : 64124 Erreur de segmentation  timeout 10 ./gauss $S
+(code retour 139)

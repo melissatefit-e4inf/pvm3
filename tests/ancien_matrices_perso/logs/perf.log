@@ -1,0 +1,2207 @@
+===== N=500   11:32:24 up 22 min,  3 users,  load average: 0,29, 0,61, 0,52
+$ ./gauss 500 m500
+loading time: 0.04681600 sec.
+
+computation time: 0.08343500 sec.
+$ spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+1 successful
+t40050
+pvm> [1:t40050] Loading time: 0.024405 sec.
+[1:t40050] Computation time: 0.074471 sec.
+[1:t40050] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+2 successful
+t40052
+t40053
+pvm> [1:t40053] Loading time: 0.023159 sec.
+[1:t40053] Computation time: 0.067974 sec.
+[1:t40052] EOF
+[1:t40053] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t40055
+t40056
+t40057
+t40058
+pvm> [1:t40058] Loading time: 0.023512 sec.
+[1:t40058] Computation time: 0.030944 sec.
+[1:t40057] EOF
+[1:t40058] EOF
+[1:t40055] EOF
+[1:t40056] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+10 successful
+t4005a
+t4005b
+t4005c
+t4005d
+t4005e
+t4005f
+t40060
+t40061
+t40062
+t40063
+pvm> [1:t4005d] Loading time: 0.024255 sec.
+[1:t4005d] Computation time: 0.032614 sec.
+[1:t4005c] EOF
+[1:t40060] EOF
+[1:t40061] EOF
+[1:t40062] EOF
+[1:t4005a] EOF
+[1:t4005b] EOF
+[1:t4005e] EOF
+[1:t4005f] EOF
+[1:t40063] EOF
+[1:t4005d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+20 successful
+t40065
+t40066
+t40067
+t40068
+t40069
+t4006a
+t4006b
+t4006c
+t4006d
+t4006e
+t4006f
+t40070
+t40071
+t40072
+t40073
+t40074
+t40075
+t40076
+t40077
+t40078
+pvm> [1:t40067] Loading time: 0.023975 sec.
+[1:t40067] Computation time: 0.053150 sec.
+[1:t40065] EOF
+[1:t40066] EOF
+[1:t4006e] EOF
+[1:t4006f] EOF
+[1:t40070] EOF
+[1:t40071] EOF
+[1:t4006c] EOF
+[1:t40072] EOF
+[1:t40068] EOF
+[1:t40069] EOF
+[1:t4006d] EOF
+[1:t40073] EOF
+[1:t40076] EOF
+[1:t40074] EOF
+[1:t40075] EOF
+[1:t4006a] EOF
+[1:t4006b] EOF
+[1:t40077] EOF
+[1:t40067] EOF
+[1:t40078] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 500 m500
+loading time: 0.03584600 sec.
+
+computation time: 0.08378100 sec.
+$ spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+1 successful
+t4007a
+pvm> [1:t4007a] Loading time: 0.023267 sec.
+[1:t4007a] Computation time: 0.074527 sec.
+[1:t4007a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+2 successful
+t4007c
+t4007d
+pvm> [1:t4007c] Loading time: 0.022910 sec.
+[1:t4007c] Computation time: 0.047550 sec.
+[1:t4007d] EOF
+[1:t4007c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t4007f
+t40080
+t40081
+t40082
+pvm> [1:t4007f] Loading time: 0.024094 sec.
+[1:t4007f] Computation time: 0.034546 sec.
+[1:t40081] EOF
+[1:t4007f] EOF
+[1:t40082] EOF
+[1:t40080] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+10 successful
+t40084
+t40085
+t40086
+t40087
+t40088
+t40089
+t4008a
+t4008b
+t4008c
+t4008d
+pvm> [1:t40086] Loading time: 0.025777 sec.
+[1:t40086] Computation time: 0.039463 sec.
+[1:t4008b] EOF
+[1:t40088] EOF
+[1:t40084] EOF
+[1:t40085] EOF
+[1:t4008d] EOF
+[1:t40089] EOF
+[1:t4008c] EOF
+[1:t40087] EOF
+[1:t4008a] EOF
+[1:t40086] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+20 successful
+t4008f
+t40090
+t40091
+t40092
+t40093
+t40094
+t40095
+t40096
+t40097
+t40098
+t40099
+t4009a
+t4009b
+t4009c
+t4009d
+t4009e
+t4009f
+t400a0
+t400a1
+t400a2
+pvm> [1:t4009a] Loading time: 0.023456 sec.
+[1:t4009a] Computation time: 0.047006 sec.
+[1:t4008f] EOF
+[1:t40090] EOF
+[1:t40094] EOF
+[1:t40092] EOF
+[1:t40091] EOF
+[1:t40093] EOF
+[1:t40095] EOF
+[1:t40096] EOF
+[1:t40097] EOF
+[1:t40098] EOF
+[1:t40099] EOF
+[1:t4009a] EOF
+[1:t4009b] EOF
+[1:t4009c] EOF
+[1:t4009d] EOF
+[1:t4009e] EOF
+[1:t4009f] EOF
+[1:t400a0] EOF
+[1:t400a1] EOF
+[1:t400a2] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 500 m500
+loading time: 0.03802700 sec.
+
+computation time: 0.08365300 sec.
+$ spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+1 successful
+t400a4
+pvm> [1:t400a4] Loading time: 0.022427 sec.
+[1:t400a4] Computation time: 0.075003 sec.
+[1:t400a4] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+2 successful
+t400a6
+t400a7
+pvm> [1:t400a7] Loading time: 0.023218 sec.
+[1:t400a7] Computation time: 0.049105 sec.
+[1:t400a7] EOF
+[1:t400a6] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t400a9
+t400aa
+t400ab
+t400ac
+pvm> [1:t400ac] Loading time: 0.023186 sec.
+[1:t400ac] Computation time: 0.032619 sec.
+[1:t400aa] EOF
+[1:t400a9] EOF
+[1:t400ac] EOF
+[1:t400ab] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+10 successful
+t400ae
+t400af
+t400b0
+t400b1
+t400b2
+t400b3
+t400b4
+t400b5
+t400b6
+t400b7
+pvm> [1:t400b3] Loading time: 0.023274 sec.
+[1:t400b3] Computation time: 0.038732 sec.
+[1:t400b0] EOF
+[1:t400b3] EOF
+[1:t400b1] EOF
+[1:t400b5] EOF
+[1:t400b2] EOF
+[1:t400af] EOF
+[1:t400ae] EOF
+[1:t400b4] EOF
+[1:t400b6] EOF
+[1:t400b7] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+20 successful
+t400b9
+t400ba
+t400bb
+t400bc
+t400bd
+t400be
+t400bf
+t400c0
+t400c1
+t400c2
+t400c3
+t400c4
+t400c5
+t400c6
+t400c7
+t400c8
+t400c9
+t400ca
+t400cb
+t400cc
+pvm> [1:t400c0] Loading time: 0.024945 sec.
+[1:t400c0] Computation time: 0.062382 sec.
+[1:t400b9] EOF
+[1:t400ba] EOF
+[1:t400bb] EOF
+[1:t400bc] EOF
+[1:t400bd] EOF
+[1:t400be] EOF
+[1:t400bf] EOF
+[1:t400c0] EOF
+[1:t400c2] EOF
+[1:t400c3] EOF
+[1:t400c4] EOF
+[1:t400c5] EOF
+[1:t400c6] EOF
+[1:t400c7] EOF
+[1:t400c8] EOF
+[1:t400c1] EOF
+[1:t400c9] EOF
+[1:t400ca] EOF
+[1:t400cb] EOF
+[1:t400cc] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 500 m500
+loading time: 0.02705400 sec.
+
+computation time: 0.08363300 sec.
+$ spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+1 successful
+t400ce
+pvm> [1:t400ce] Loading time: 0.022718 sec.
+[1:t400ce] Computation time: 0.074650 sec.
+[1:t400ce] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+2 successful
+t400d0
+t400d1
+pvm> [1:t400d0] Loading time: 0.023640 sec.
+[1:t400d0] Computation time: 0.048012 sec.
+[1:t400d0] EOF
+[1:t400d1] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t400d3
+t400d4
+t400d5
+t400d6
+pvm> [1:t400d3] Loading time: 0.023029 sec.
+[1:t400d3] Computation time: 0.032551 sec.
+[1:t400d3] EOF
+[1:t400d4] EOF
+[1:t400d5] EOF
+[1:t400d6] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+10 successful
+t400d8
+t400d9
+t400da
+t400db
+t400dc
+t400dd
+t400de
+t400df
+t400e0
+t400e1
+pvm> [1:t400da] Loading time: 0.023251 sec.
+[1:t400da] Computation time: 0.033235 sec.
+[1:t400d8] EOF
+[1:t400d9] EOF
+[1:t400da] EOF
+[1:t400e0] EOF
+[1:t400dc] EOF
+[1:t400de] EOF
+[1:t400db] EOF
+[1:t400dd] EOF
+[1:t400df] EOF
+[1:t400e1] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+20 successful
+t400e3
+t400e4
+t400e5
+t400e6
+t400e7
+t400e8
+t400e9
+t400ea
+t400eb
+t400ec
+t400ed
+t400ee
+t400ef
+t400f0
+t400f1
+t400f2
+t400f3
+t400f4
+t400f5
+t400f6
+pvm> [1:t400e9] Loading time: 0.023347 sec.
+[1:t400e9] Computation time: 0.050064 sec.
+[1:t400e3] EOF
+[1:t400e5] EOF
+[1:t400e8] EOF
+[1:t400e4] EOF
+[1:t400e6] EOF
+[1:t400e7] EOF
+[1:t400ec] EOF
+[1:t400ee] EOF
+[1:t400eb] EOF
+[1:t400f0] EOF
+[1:t400e9] EOF
+[1:t400ed] EOF
+[1:t400ef] EOF
+[1:t400f1] EOF
+[1:t400f2] EOF
+[1:t400f3] EOF
+[1:t400f4] EOF
+[1:t400f5] EOF
+[1:t400f6] EOF
+[1:t400ea] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 500 m500
+loading time: 0.04098000 sec.
+
+computation time: 0.08349800 sec.
+$ spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -1 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+1 successful
+t400f8
+pvm> [1:t400f8] Loading time: 0.022348 sec.
+[1:t400f8] Computation time: 0.074128 sec.
+[1:t400f8] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -2 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+2 successful
+t400fa
+t400fb
+pvm> [1:t400fa] Loading time: 0.022911 sec.
+[1:t400fa] Computation time: 0.055070 sec.
+[1:t400fa] EOF
+[1:t400fb] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -4 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+4 successful
+t400fd
+t400fe
+t400ff
+t40100
+pvm> [1:t400fd] Loading time: 0.026437 sec.
+[1:t400fd] Computation time: 0.039515 sec.
+[1:t400ff] EOF
+[1:t400fe] EOF
+[1:t400fd] EOF
+[1:t40100] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -10 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+10 successful
+t40102
+t40103
+t40104
+t40105
+t40106
+t40107
+t40108
+t40109
+t4010a
+t4010b
+pvm> [1:t40108] Loading time: 0.023738 sec.
+[1:t40108] Computation time: 0.033058 sec.
+[1:t40106] EOF
+[1:t40103] EOF
+[1:t40102] EOF
+[1:t40105] EOF
+[1:t40104] EOF
+[1:t40107] EOF
+[1:t4010a] EOF
+[1:t4010b] EOF
+[1:t40109] EOF
+[1:t40108] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+pvmd already running.
+pvm> spawn -20 -> gaussp 500 /user/safarl/pvm3/bin/LINUX64/m500
+[1]
+20 successful
+t4010d
+t4010e
+t4010f
+t40110
+t40111
+t40112
+t40113
+t40114
+t40115
+t40116
+t40117
+t40118
+t40119
+t4011a
+t4011b
+t4011c
+t4011d
+t4011e
+t4011f
+t40120
+pvm> [1:t40110] Loading time: 0.023625 sec.
+[1:t40110] Computation time: 0.048105 sec.
+[1:t4010d] EOF
+[1:t4010e] EOF
+[1:t4010f] EOF
+[1:t40111] EOF
+[1:t40117] EOF
+[1:t40119] EOF
+[1:t4011a] EOF
+[1:t4011b] EOF
+[1:t4011e] EOF
+[1:t4011f] EOF
+[1:t40113] EOF
+[1:t40114] EOF
+[1:t40110] EOF
+[1:t4011d] EOF
+[1:t40112] EOF
+[1:t40115] EOF
+[1:t40116] EOF
+[1:t4011c] EOF
+[1:t40120] EOF
+[1:t40118] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+===== N=1000   11:32:38 up 22 min,  3 users,  load average: 0,52, 0,64, 0,54
+$ ./gauss 1000 m1000
+loading time: 0.11377600 sec.
+
+computation time: 0.67662400 sec.
+$ spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+1 successful
+t40122
+pvm> [1:t40122] Loading time: 0.105685 sec.
+[1:t40122] Computation time: 0.589463 sec.
+[1:t40122] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+2 successful
+t40124
+t40125
+pvm> [1:t40124] Loading time: 0.108010 sec.
+[1:t40124] Computation time: 0.358933 sec.
+[1:t40124] EOF
+[1:t40125] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t40127
+t40128
+t40129
+t4012a
+pvm> [1:t40129] Loading time: 0.095330 sec.
+[1:t40129] Computation time: 0.260663 sec.
+[1:t40129] EOF
+[1:t40127] EOF
+[1:t4012a] EOF
+[1:t40128] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+8 successful
+t4012c
+t4012d
+t4012e
+t4012f
+t40130
+t40131
+t40132
+t40133
+pvm> [1:t40130] Loading time: 0.091853 sec.
+[1:t40130] Computation time: 0.188343 sec.
+[1:t40130] EOF
+[1:t4012d] EOF
+[1:t4012c] EOF
+[1:t40131] EOF
+[1:t40132] EOF
+[1:t40133] EOF
+[1:t4012e] EOF
+[1:t4012f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+10 successful
+t40135
+t40136
+t40137
+t40138
+t40139
+t4013a
+t4013b
+t4013c
+t4013d
+t4013e
+pvm> [1:t40139] Loading time: 0.091768 sec.
+[1:t40139] Computation time: 0.195821 sec.
+[1:t40135] EOF
+[1:t40139] EOF
+[1:t4013b] EOF
+[1:t4013e] EOF
+[1:t40138] EOF
+[1:t4013c] EOF
+[1:t40136] EOF
+[1:t4013d] EOF
+[1:t40137] EOF
+[1:t4013a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+20 successful
+t40140
+t40141
+t40142
+t40143
+t40144
+t40145
+t40146
+t40147
+t40148
+t40149
+t4014a
+t4014b
+t4014c
+t4014d
+t4014e
+t4014f
+t40150
+t40151
+t40152
+t40153
+pvm> [1:t40142] Loading time: 0.092312 sec.
+[1:t40142] Computation time: 0.229724 sec.
+
+pvm> [1:t40142] EOF
+[1:t40143] EOF
+[1:t40140] EOF
+[1:t40141] EOF
+[1:t40144] EOF
+[1:t40145] EOF
+[1:t40146] EOF
+[1:t40147] EOF
+[1:t40148] EOF
+[1:t40149] EOF
+[1:t4014a] EOF
+[1:t4014b] EOF
+[1:t4014c] EOF
+[1:t4014d] EOF
+[1:t4014e] EOF
+[1:t4014f] EOF
+[1:t40150] EOF
+[1:t40151] EOF
+[1:t40152] EOF
+[1:t40153] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 1000 m1000
+loading time: 0.10026000 sec.
+
+computation time: 0.67786100 sec.
+$ spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+1 successful
+t40155
+pvm> [1:t40155] Loading time: 0.113361 sec.
+[1:t40155] Computation time: 0.595957 sec.
+[1:t40155] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+2 successful
+t40157
+t40158
+pvm> [1:t40158] Loading time: 0.109573 sec.
+[1:t40158] Computation time: 0.382543 sec.
+[1:t40157] EOF
+[1:t40158] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t4015a
+t4015b
+t4015c
+t4015d
+pvm> [1:t4015c] Loading time: 0.109955 sec.
+[1:t4015c] Computation time: 0.223362 sec.
+[1:t4015c] EOF
+[1:t4015b] EOF
+[1:t4015a] EOF
+[1:t4015d] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+8 successful
+t4015f
+t40160
+t40161
+t40162
+t40163
+t40164
+t40165
+t40166
+pvm> [1:t40160] Loading time: 0.091140 sec.
+[1:t40160] Computation time: 0.199252 sec.
+[1:t40161] EOF
+[1:t40164] EOF
+[1:t40160] EOF
+[1:t40162] EOF
+[1:t40165] EOF
+[1:t40163] EOF
+[1:t4015f] EOF
+[1:t40166] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+10 successful
+t40168
+t40169
+t4016a
+t4016b
+t4016c
+t4016d
+t4016e
+t4016f
+t40170
+t40171
+pvm> [1:t4016b] Loading time: 0.092581 sec.
+[1:t4016b] Computation time: 0.185918 sec.
+[1:t40169] EOF
+[1:t4016f] EOF
+[1:t40168] EOF
+[1:t4016a] EOF
+[1:t40170] EOF
+[1:t4016c] EOF
+[1:t4016d] EOF
+[1:t4016e] EOF
+[1:t4016b] EOF
+[1:t40171] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+20 successful
+t40173
+t40174
+t40175
+t40176
+t40177
+t40178
+t40179
+t4017a
+t4017b
+t4017c
+t4017d
+t4017e
+t4017f
+t40180
+t40181
+t40182
+t40183
+t40184
+t40185
+t40186
+pvm> [1:t4017d] Loading time: 0.094214 sec.
+[1:t4017d] Computation time: 0.229389 sec.
+[1:t40173] EOF
+[1:t40174] EOF
+[1:t40176] EOF
+[1:t40177] EOF
+[1:t40179] EOF
+[1:t40175] EOF
+[1:t40178] EOF
+[1:t4017a] EOF
+[1:t4017b] EOF
+[1:t4017e] EOF
+[1:t4017c] EOF
+[1:t4017f] EOF
+[1:t4017d] EOF
+[1:t40180] EOF
+[1:t40181] EOF
+[1:t40182] EOF
+[1:t40184] EOF
+[1:t40183] EOF
+[1:t40185] EOF
+[1:t40186] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 1000 m1000
+loading time: 0.10450000 sec.
+
+computation time: 0.67745300 sec.
+$ spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+1 successful
+t40188
+pvm> [1:t40188] Loading time: 0.106456 sec.
+[1:t40188] Computation time: 0.599388 sec.
+[1:t40188] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+2 successful
+t4018a
+t4018b
+pvm> [1:t4018a] Loading time: 0.104425 sec.
+[1:t4018a] Computation time: 0.375849 sec.
+[1:t4018a] EOF
+[1:t4018b] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t4018d
+t4018e
+t4018f
+t40190
+pvm> [1:t4018d] Loading time: 0.091607 sec.
+[1:t4018d] Computation time: 0.213468 sec.
+[1:t4018d] EOF
+[1:t4018e] EOF
+[1:t4018f] EOF
+[1:t40190] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+8 successful
+t40192
+t40193
+t40194
+t40195
+t40196
+t40197
+t40198
+t40199
+pvm> [1:t40196] Loading time: 0.091936 sec.
+[1:t40196] Computation time: 0.203565 sec.
+[1:t40192] EOF
+[1:t40193] EOF
+[1:t40194] EOF
+[1:t40195] EOF
+[1:t40196] EOF
+[1:t40197] EOF
+[1:t40198] EOF
+[1:t40199] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+10 successful
+t4019b
+t4019c
+t4019d
+t4019e
+t4019f
+t401a0
+t401a1
+t401a2
+t401a3
+t401a4
+pvm> [1:t4019c] Loading time: 0.093202 sec.
+[1:t4019c] Computation time: 0.184344 sec.
+[1:t4019c] EOF
+[1:t401a4] EOF
+[1:t4019b] EOF
+[1:t4019d] EOF
+[1:t4019e] EOF
+[1:t4019f] EOF
+[1:t401a1] EOF
+[1:t401a0] EOF
+[1:t401a2] EOF
+[1:t401a3] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+20 successful
+t401a6
+t401a7
+t401a8
+t401a9
+t401aa
+t401ab
+t401ac
+t401ad
+t401ae
+t401af
+t401b0
+t401b1
+t401b2
+t401b3
+t401b4
+t401b5
+t401b6
+t401b7
+t401b8
+t401b9
+pvm> [1:t401a8] Loading time: 0.092640 sec.
+[1:t401a8] Computation time: 0.222225 sec.
+[1:t401a6] EOF
+[1:t401a7] EOF
+[1:t401ac] EOF
+[1:t401a8] EOF
+[1:t401ab] EOF
+[1:t401a9] EOF
+[1:t401aa] EOF
+[1:t401ad] EOF
+[1:t401ae] EOF
+[1:t401b0] EOF
+[1:t401b2] EOF
+[1:t401b3] EOF
+[1:t401b1] EOF
+[1:t401b4] EOF
+[1:t401b5] EOF
+[1:t401b6] EOF
+[1:t401b9] EOF
+[1:t401b7] EOF
+[1:t401af] EOF
+[1:t401b8] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 1000 m1000
+loading time: 0.09838300 sec.
+
+computation time: 0.67501200 sec.
+$ spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+1 successful
+t401bb
+pvm> [1:t401bb] Loading time: 0.101683 sec.
+[1:t401bb] Computation time: 0.598564 sec.
+[1:t401bb] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+2 successful
+t401bd
+t401be
+pvm> [1:t401bd] Loading time: 0.104076 sec.
+[1:t401bd] Computation time: 0.358935 sec.
+[1:t401bd] EOF
+[1:t401be] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t401c0
+t401c1
+t401c2
+t401c3
+pvm> [1:t401c2] Loading time: 0.094302 sec.
+[1:t401c2] Computation time: 0.206184 sec.
+[1:t401c0] EOF
+[1:t401c1] EOF
+[1:t401c2] EOF
+[1:t401c3] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+8 successful
+t401c5
+t401c6
+t401c7
+t401c8
+t401c9
+t401ca
+t401cb
+t401cc
+pvm> [1:t401cb] Loading time: 0.093214 sec.
+[1:t401cb] Computation time: 0.174674 sec.
+[1:t401c6] EOF
+[1:t401c7] EOF
+[1:t401c8] EOF
+[1:t401cb] EOF
+[1:t401ca] EOF
+[1:t401c5] EOF
+[1:t401c9] EOF
+[1:t401cc] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+10 successful
+t401ce
+t401cf
+t401d0
+t401d1
+t401d2
+t401d3
+t401d4
+t401d5
+t401d6
+t401d7
+pvm> [1:t401d2] Loading time: 0.096339 sec.
+[1:t401d2] Computation time: 0.180390 sec.
+[1:t401d1] EOF
+[1:t401d2] EOF
+[1:t401ce] EOF
+[1:t401d4] EOF
+[1:t401cf] EOF
+[1:t401d0] EOF
+[1:t401d3] EOF
+[1:t401d7] EOF
+[1:t401d5] EOF
+[1:t401d6] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+20 successful
+t401d9
+t401da
+t401db
+t401dc
+t401dd
+t401de
+t401df
+t401e0
+t401e1
+t401e2
+t401e3
+t401e4
+t401e5
+t401e6
+t401e7
+t401e8
+t401e9
+t401ea
+t401eb
+t401ec
+pvm> [1:t401db] Loading time: 0.101891 sec.
+[1:t401db] Computation time: 0.227684 sec.
+[1:t401da] EOF
+[1:t401d9] EOF
+[1:t401db] EOF
+[1:t401dc] EOF
+[1:t401dd] EOF
+[1:t401de] EOF
+[1:t401df] EOF
+[1:t401e0] EOF
+[1:t401e1] EOF
+[1:t401e2] EOF
+[1:t401e3] EOF
+[1:t401e4] EOF
+[1:t401e5] EOF
+[1:t401e6] EOF
+[1:t401e7] EOF
+[1:t401e8] EOF
+[1:t401e9] EOF
+[1:t401ea] EOF
+[1:t401eb] EOF
+[1:t401ec] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 1000 m1000
+loading time: 0.09942300 sec.
+
+computation time: 0.67102000 sec.
+$ spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -1 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+1 successful
+t401ee
+pvm> [1:t401ee] Loading time: 0.108059 sec.
+[1:t401ee] Computation time: 0.586063 sec.
+[1:t401ee] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -2 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+2 successful
+t401f0
+t401f1
+pvm> [1:t401f0] Loading time: 0.102792 sec.
+[1:t401f0] Computation time: 0.384603 sec.
+[1:t401f0] EOF
+[1:t401f1] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -4 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+4 successful
+t401f3
+t401f4
+t401f5
+t401f6
+pvm> [1:t401f6] Loading time: 0.108960 sec.
+[1:t401f6] Computation time: 0.202653 sec.
+[1:t401f6] EOF
+[1:t401f3] EOF
+[1:t401f4] EOF
+[1:t401f5] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -8 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+8 successful
+t401f8
+t401f9
+t401fa
+t401fb
+t401fc
+t401fd
+t401fe
+t401ff
+pvm> [1:t401fa] Loading time: 0.091956 sec.
+[1:t401fa] Computation time: 0.186792 sec.
+[1:t401fd] EOF
+[1:t401f9] EOF
+[1:t401fa] EOF
+[1:t401fc] EOF
+[1:t401f8] EOF
+[1:t401fb] EOF
+[1:t401fe] EOF
+[1:t401ff] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -10 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+10 successful
+t40201
+t40202
+t40203
+t40204
+t40205
+t40206
+t40207
+t40208
+t40209
+t4020a
+pvm> [1:t40201] Loading time: 0.094786 sec.
+[1:t40201] Computation time: 0.190422 sec.
+[1:t40201] EOF
+[1:t40202] EOF
+[1:t40203] EOF
+[1:t40205] EOF
+[1:t40206] EOF
+[1:t40207] EOF
+[1:t40204] EOF
+[1:t40208] EOF
+[1:t40209] EOF
+[1:t4020a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+pvmd already running.
+pvm> spawn -20 -> gaussp 1000 /user/safarl/pvm3/bin/LINUX64/m1000
+[1]
+20 successful
+t4020c
+t4020d
+t4020e
+t4020f
+t40210
+t40211
+t40212
+t40213
+t40214
+t40215
+t40216
+t40217
+t40218
+t40219
+t4021a
+t4021b
+t4021c
+t4021d
+t4021e
+t4021f
+pvm> [1:t4020e] Loading time: 0.092136 sec.
+[1:t4020e] Computation time: 0.232159 sec.
+[1:t4020e] EOF
+[1:t40210] EOF
+[1:t40211] EOF
+[1:t40212] EOF
+[1:t40213] EOF
+[1:t40215] EOF
+[1:t40216] EOF
+[1:t40217] EOF
+[1:t40218] EOF
+[1:t4021a] EOF
+[1:t4021b] EOF
+[1:t4021c] EOF
+[1:t4021d] EOF
+[1:t4021e] EOF
+[1:t4021f] EOF
+[1:t40219] EOF
+[1:t4020c] EOF
+[1:t4020d] EOF
+[1:t40214] EOF
+[1:t4020f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+===== N=2000   11:33:13 up 22 min,  3 users,  load average: 2,21, 1,01, 0,66
+$ ./gauss 2000 m2000
+loading time: 0.40239300 sec.
+
+computation time: 5.27803500 sec.
+$ spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+1 successful
+t40221
+pvm> [1:t40221] Loading time: 0.504772 sec.
+[1:t40221] Computation time: 4.658245 sec.
+[1:t40221] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+2 successful
+t40223
+t40224
+pvm> [1:t40223] Loading time: 0.415217 sec.
+[1:t40223] Computation time: 2.549861 sec.
+[1:t40223] EOF
+[1:t40224] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+4 successful
+t40226
+t40227
+t40228
+t40229
+pvm> [1:t40226] Loading time: 0.414611 sec.
+[1:t40226] Computation time: 1.422243 sec.
+[1:t40226] EOF
+[1:t40229] EOF
+[1:t40227] EOF
+[1:t40228] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+8 successful
+t4022b
+t4022c
+t4022d
+t4022e
+t4022f
+t40230
+t40231
+t40232
+pvm> [1:t4022d] Loading time: 0.397631 sec.
+[1:t4022d] Computation time: 1.539644 sec.
+[1:t4022d] EOF
+[1:t4022b] EOF
+[1:t40232] EOF
+[1:t4022e] EOF
+[1:t4022c] EOF
+[1:t4022f] EOF
+[1:t40230] EOF
+[1:t40231] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+10 successful
+t40234
+t40235
+t40236
+t40237
+t40238
+t40239
+t4023a
+t4023b
+t4023c
+t4023d
+pvm> [1:t40236] Loading time: 0.398533 sec.
+[1:t40236] Computation time: 1.135932 sec.
+[1:t40237] EOF
+[1:t40236] EOF
+[1:t4023d] EOF
+[1:t40239] EOF
+[1:t4023a] EOF
+[1:t40235] EOF
+[1:t40234] EOF
+[1:t40238] EOF
+[1:t4023b] EOF
+[1:t4023c] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+20 successful
+t4023f
+t40240
+t40241
+t40242
+t40243
+t40244
+t40245
+t40246
+t40247
+t40248
+t40249
+t4024a
+t4024b
+t4024c
+t4024d
+t4024e
+t4024f
+t40250
+t40251
+t40252
+pvm> [1:t40247] Loading time: 0.418581 sec.
+[1:t40247] Computation time: 1.132543 sec.
+[1:t40243] EOF
+[1:t40245] EOF
+[1:t4023f] EOF
+[1:t40244] EOF
+[1:t40240] EOF
+[1:t40241] EOF
+[1:t40242] EOF
+[1:t40246] EOF
+[1:t40247] EOF
+[1:t40249] EOF
+[1:t4024d] EOF
+[1:t4024f] EOF
+[1:t4024c] EOF
+[1:t4024b] EOF
+[1:t4024e] EOF
+[1:t40250] EOF
+[1:t40251] EOF
+[1:t4024a] EOF
+[1:t40248] EOF
+[1:t40252] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 2000 m2000
+loading time: 0.37201700 sec.
+
+computation time: 5.26048000 sec.
+$ spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+1 successful
+t40254
+pvm> [1:t40254] Loading time: 0.361439 sec.
+[1:t40254] Computation time: 4.607771 sec.
+[1:t40254] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+2 successful
+t40256
+t40257
+pvm> [1:t40257] Loading time: 0.393456 sec.
+[1:t40257] Computation time: 2.557125 sec.
+[1:t40256] EOF
+[1:t40257] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+4 successful
+t40259
+t4025a
+t4025b
+t4025c
+pvm> [1:t4025a] Loading time: 0.396455 sec.
+[1:t4025a] Computation time: 1.433723 sec.
+[1:t4025b] EOF
+[1:t4025c] EOF
+[1:t40259] EOF
+[1:t4025a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+8 successful
+t4025e
+t4025f
+t40260
+t40261
+t40262
+t40263
+t40264
+t40265
+pvm> [1:t40261] Loading time: 0.395951 sec.
+[1:t40261] Computation time: 1.615234 sec.
+[1:t40260] EOF
+[1:t40261] EOF
+[1:t4025e] EOF
+[1:t4025f] EOF
+[1:t40262] EOF
+[1:t40264] EOF
+[1:t40263] EOF
+[1:t40265] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+10 successful
+t40267
+t40268
+t40269
+t4026a
+t4026b
+t4026c
+t4026d
+t4026e
+t4026f
+t40270
+pvm> [1:t4026b] Loading time: 0.397258 sec.
+[1:t4026b] Computation time: 1.255714 sec.
+[1:t40267] EOF
+[1:t40268] EOF
+[1:t40269] EOF
+[1:t4026a] EOF
+[1:t4026b] EOF
+[1:t4026c] EOF
+[1:t40270] EOF
+[1:t4026d] EOF
+[1:t4026e] EOF
+[1:t4026f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+20 successful
+t40272
+t40273
+t40274
+t40275
+t40276
+t40277
+t40278
+t40279
+t4027a
+t4027b
+t4027c
+t4027d
+t4027e
+t4027f
+t40280
+t40281
+t40282
+t40283
+t40284
+t40285
+pvm> [1:t40275] Loading time: 0.395493 sec.
+[1:t40275] Computation time: 1.097190 sec.
+[1:t40274] EOF
+[1:t40272] EOF
+[1:t40276] EOF
+[1:t40275] EOF
+[1:t40273] EOF
+[1:t40277] EOF
+[1:t40278] EOF
+[1:t4027a] EOF
+[1:t4027c] EOF
+[1:t4027d] EOF
+[1:t40279] EOF
+[1:t4027b] EOF
+[1:t4027f] EOF
+[1:t40280] EOF
+[1:t40281] EOF
+[1:t40285] EOF
+[1:t40284] EOF
+[1:t40282] EOF
+[1:t4027e] EOF
+[1:t40283] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ ./gauss 2000 m2000
+loading time: 0.38583500 sec.
+
+computation time: 5.26196000 sec.
+$ spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -1 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+1 successful
+t40287
+pvm> [1:t40287] Loading time: 0.375394 sec.
+[1:t40287] Computation time: 4.675737 sec.
+[1:t40287] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -2 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+2 successful
+t40289
+t4028a
+pvm> [1:t4028a] Loading time: 0.392352 sec.
+[1:t4028a] Computation time: 2.591625 sec.
+[1:t40289] EOF
+[1:t4028a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -4 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+4 successful
+t4028c
+t4028d
+t4028e
+t4028f
+pvm> [1:t4028e] Loading time: 0.382554 sec.
+[1:t4028e] Computation time: 1.507520 sec.
+[1:t4028c] EOF
+[1:t4028e] EOF
+[1:t4028d] EOF
+[1:t4028f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -8 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+8 successful
+t40291
+t40292
+t40293
+t40294
+t40295
+t40296
+t40297
+t40298
+pvm> [1:t40295] Loading time: 0.388937 sec.
+[1:t40295] Computation time: 1.419792 sec.
+[1:t40295] EOF
+[1:t40297] EOF
+[1:t40296] EOF
+[1:t40298] EOF
+[1:t40291] EOF
+[1:t40294] EOF
+[1:t40292] EOF
+[1:t40293] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -10 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+10 successful
+t4029a
+t4029b
+t4029c
+t4029d
+t4029e
+t4029f
+t402a0
+t402a1
+t402a2
+t402a3
+pvm> [1:t4029c] Loading time: 0.397063 sec.
+[1:t4029c] Computation time: 1.153677 sec.
+[1:t4029b] EOF
+[1:t402a2] EOF
+[1:t4029a] EOF
+[1:t4029e] EOF
+[1:t4029f] EOF
+[1:t4029c] EOF
+[1:t4029d] EOF
+[1:t402a0] EOF
+[1:t402a1] EOF
+[1:t402a3] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+pvmd already running.
+pvm> spawn -20 -> gaussp 2000 /user/safarl/pvm3/bin/LINUX64/m2000
+[1]
+20 successful
+t402a5
+t402a6
+t402a7
+t402a8
+t402a9
+t402aa
+t402ab
+t402ac
+t402ad
+t402ae
+t402af
+t402b0
+t402b1
+t402b2
+t402b3
+t402b4
+t402b5
+t402b6
+t402b7
+t402b8
+pvm> [1:t402af] Loading time: 0.404315 sec.
+[1:t402af] Computation time: 1.096167 sec.
+[1:t402a5] EOF
+[1:t402a6] EOF
+[1:t402a7] EOF
+[1:t402a8] EOF
+[1:t402a9] EOF
+[1:t402aa] EOF
+[1:t402ab] EOF
+[1:t402ac] EOF
+[1:t402ad] EOF
+[1:t402ae] EOF
+[1:t402af] EOF
+[1:t402b0] EOF
+[1:t402b1] EOF
+[1:t402b2] EOF
+[1:t402b3] EOF
+[1:t402b4] EOF
+[1:t402b5] EOF
+[1:t402b6] EOF
+[1:t402b7] EOF
+[1:t402b8] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+===== N=5000   11:34:38 up 24 min,  3 users,  load average: 2,90, 1,54, 0,88
+$ ./gauss 5000 m5000
+loading time: 2.35775600 sec.
+
+computation time: 80.72279400 sec.
+$ spawn -4 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+pvmd already running.
+pvm> spawn -4 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+[1]
+4 successful
+t402ba
+t402bb
+t402bc
+t402bd
+pvm> [1:t402bc] Loading time: 3.607044 sec.
+[1:t402bc] Computation time: 19.609140 sec.
+[1:t402bc] EOF
+[1:t402bb] EOF
+[1:t402bd] EOF
+[1:t402ba] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -10 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+pvmd already running.
+pvm> spawn -10 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+[1]
+10 successful
+t402bf
+t402c0
+t402c1
+t402c2
+t402c3
+t402c4
+t402c5
+t402c6
+t402c7
+t402c8
+pvm> [1:t402c0] Loading time: 3.085425 sec.
+[1:t402c0] Computation time: 14.653000 sec.
+[1:t402c7] EOF
+[1:t402c3] EOF
+[1:t402bf] EOF
+[1:t402c1] EOF
+[1:t402c2] EOF
+[1:t402c4] EOF
+[1:t402c0] EOF
+[1:t402c5] EOF
+[1:t402c6] EOF
+[1:t402c8] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+$ spawn -20 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+pvmd already running.
+pvm> spawn -20 -> gaussp 5000 /user/safarl/pvm3/bin/LINUX64/m5000
+[1]
+20 successful
+t402ca
+t402cb
+t402cc
+t402cd
+t402ce
+t402cf
+t402d0
+t402d1
+t402d2
+t402d3
+t402d4
+t402d5
+t402d6
+t402d7
+t402d8
+t402d9
+t402da
+t402db
+t402dc
+t402dd
+pvm> [1:t402cd] Loading time: 3.482798 sec.
+[1:t402cd] Computation time: 14.210218 sec.
+[1:t402cb] EOF
+[1:t402ca] EOF
+[1:t402d8] EOF
+[1:t402cc] EOF
+[1:t402cf] EOF
+[1:t402db] EOF
+[1:t402cd] EOF
+[1:t402d1] EOF
+[1:t402ce] EOF
+[1:t402d2] EOF
+[1:t402d3] EOF
+[1:t402dc] EOF
+[1:t402d0] EOF
+[1:t402d6] EOF
+[1:t402d9] EOF
+[1:t402d5] EOF
+[1:t402d4] EOF
+[1:t402d7] EOF
+[1:t402dd] EOF
+[1:t402da] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.

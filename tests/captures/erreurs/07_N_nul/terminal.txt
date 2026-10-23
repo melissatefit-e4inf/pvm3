@@ -1,0 +1,45 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 0 /user/safarl/pvm3/matrices-test/m4
+[1]
+2 successful
+t400ed
+t8004a
+pvm> [1:t400ed] Loading time: 0.009648 sec.
+[1:t400ed] Computation time: 0.001036 sec.
+[1:t400ed] EOF
+[1:t8004a] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400eb     6/c,f pvmgs       
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l m4.result
+-rwxr-xr-x 1 safarl Domain Users 0 23 oct.  18:31 m4.result
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 0 m4        # référence séquentielle
+loading time: 0.00116200 sec.
+
+computation time: 0.00000300 sec.
+(code retour 0)

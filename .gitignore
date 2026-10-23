@@ -9,3 +9,7 @@ tokenring-sibling
 
 # divers
 archives/
+
+# grosses matrices fournies (trop lourdes pour GitHub) : /nfs/opt/pvm/pvm3/m5000 et m10000
+matrices-test/m5000
+matrices-test/m10000

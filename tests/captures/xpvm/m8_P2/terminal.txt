@@ -1,0 +1,25 @@
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 8 m8
+loading time: 0.34838600 sec.
+
+computation time: 0.00000700 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m8.result m8.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m8.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -2 -> gaussp 8 /user/safarl/pvm3/matrices-test/m8
+[1]
+2 successful
+t10001f
+t40041
+pvm> [1:t40041] Loading time: 0.001725 sec.
+[1:t40041] Computation time: 0.002777 sec.
+[1:t40041] EOF
+[1:t10001f] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m8.seq.result m8.result 8
+valeurs=64/64 attendu=64 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

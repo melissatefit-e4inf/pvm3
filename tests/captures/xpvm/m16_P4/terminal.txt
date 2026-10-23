@@ -1,0 +1,31 @@
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 16 m16
+loading time: 0.01101100 sec.
+
+computation time: 0.00000600 sec.
+safarl@pc5201l:~/pvm3/matrices-test$ cp m16.result m16.seq.result
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.triangule m16.seq.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f m16.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 16 /user/safarl/pvm3/matrices-test/m16
+[1]
+4 successful
+t80022
+t80023
+t100024
+t4004e
+pvm> [1:t4004e] Loading time: 0.004639 sec.
+[1:t4004e] Computation time: 0.006129 sec.
+[1:t4004e] EOF
+[1:t80023] EOF
+[1:t100024] EOF
+[1:t80022] EOF
+[1] finished
+
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ../tests/compare.py m16.seq.result m16.result 16
+valeurs=256/256 attendu=256 diff>0.011=0 ecart_max=0.0000 max_sous_diag=0.0000 finies=True -> OK

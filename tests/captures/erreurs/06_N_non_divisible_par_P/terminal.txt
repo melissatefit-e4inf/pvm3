@@ -1,0 +1,55 @@
+safarl@pc5201l:~/pvm3/matrices-test$ rm -f erreurs/m6.result
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> spawn -4 -> gaussp 6 /user/safarl/pvm3/matrices-test/erreurs/m6
+[1]
+4 successful
+t400e4
+t400e5
+t80049
+t100046
+pvm> ### TIMEOUT 15s : job non terminé
+
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400e2     6/c,f pvmgs       
+                 pc5201l    400e4     6/c,f gaussp      
+                 pc5201l    400e5     6/c,f gaussp      
+                 pc5201c   100046     6/c,f gaussp      
+                 pc5201a    80049     6/c,f gaussp      
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+                 pc5201l    400e2     6/c,f pvmgs       
+                 pc5201l    400e4     6/c,f gaussp      
+                 pc5201l    400e5     6/c,f gaussp      
+                 pc5201a    80049     6/c,f gaussp      
+                 pc5201c   100046     6/c,f gaussp      
+pvm> reset
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ pvm
+pvmd already running.
+pvm> ps -a
+                    HOST      TID   FLAG 0x COMMAND
+                 pc5201l    40001       4/c -           
+pvm> quit
+
+Console: exit handler called
+pvmd still running.
+safarl@pc5201l:~/pvm3/matrices-test$ ls -l erreurs/m6.result
+-rwxr-xr-x 1 safarl Domain Users 0 23 oct.  18:31 erreurs/m6.result
+safarl@pc5201l:~/pvm3/matrices-test$ ./gauss 6 erreurs/m6        # référence séquentielle
+loading time: 0.00555800 sec.
+
+computation time: 0.00000300 sec.
+(code retour 0)
